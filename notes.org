@@ -1,0 +1,76 @@
+
+* Universal Usability
+All about dynamic and flexibility.
+
+** Agenda
+*** Technology variety
+*** User diversity
+*** Gaps in User Knowledge
+- A fundamental interface and information design research problem is
+  how to support evolutionary learning.
+- Layered implementation.
+
+
+* How does Mellow Interaction fit in?
+
+
+* Ubiquitous computing
+- Invisible interface (Weiser 1994, Cooperstock 1995, Fishkin 1998)
+
+** Invisibility was a key feature of at least three other lines of argument
+- User-Centered Design (Norman and Draper 1986)
+- Information appliances (Invisible computer)
+- Tangible interaction
+
+** However, invisible interface is too simplistic
+- If invisible, it can not be engaging, it can not communicate.
+- Interface may mediate user action.
+- (Refer to Windows and Mirrors.)
+
+* User experience
+** Richer models
+- Embodied Interaction
+  - Tangible computing
+  - Social computing
+    - About the context in which computation is put to work.
+    - The interaction between the designer and the user is through the
+      system. This implies that even the most isolated and individual
+      interaction with a computer system is still fundamentally a
+      social activity.
+- User Experience -- a research agenda (three perspectives)
+  - Beyond the instrumental (characteristics of the designed system)
+  - Emotion and affect (user's internal state)
+  - The experiental (context)
+
+** Why difficult to have universal definition
+ - Associated with broad range of concepts (depending on author's
+   background.)
+ - Unit of analysis for UX is too malleable
+
+** ISO definition
+A person's perceptions and responses that result from the use or
+anticipated use of a product, system or service.
+
+(No social aspect?) Survey approach says no. Co-experience says yes.
+
+
+* Brief description of context
+
+
+* Information Transparency
+Is it required to have transparent user experience?
+
+
+
+* Transparency in Recommender System
+Transparency improves the search performance.
+
+
+* Articulating the experience of transparency: an example of field research techniques
+Rutkowski (1982) proposes that transparency is the ideal relationship
+between user and tool, with the tool seeming to disappear.
+
+
+* Examples
+- Confusion between Wifi and Bluetooth
+- PS2 O and X buttons

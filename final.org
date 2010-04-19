@@ -1,0 +1,94 @@
+
+* Introduction
+
+** Describe problems
+Describe problems and challenge from various angles.
+
+From software engineer's point of view.
+
+** Describe purpose of the research
+LMNT as previous study. Propose ring-style LMNT. Explicit touchpad
+boundary.
+
+** Describe agenda
+
+** Talk about existing efforts
+How transparency can be integrated into user experience is yet a open
+question. This project tries to establish....
+
+Such systems have a reflective capability in the sense that they allow
+programmers to observe and manipulate their underlying computational
+behavior.
+
+
+* Study Goal
+
+
+* Design Characteristics
+
+** Current solutions
+- Discuss their pros and cons.
+- Useful variants.
+- Examples in real-world applications.
+
+** Proposed solution
+
+
+* (Solution) Characteristics
+
+** Taxonomy of the problems
+- Common issues
+- Examples
+- Categorizations
+
+** Further Description of the Problems
+
+
+* Description of the Critical (Focused) Components
+
+** Goals
+
+** Framework
+
+** Model
+
+
+* Working Examples
+
+
+* Previous Research
+(Look for notes of the books in the notepad.)
+
+** Research that suggests the proposed solution is promising
+
+** And also the derived researches
+
+
+* Research Methodology
+
+
+* Planned Experiment
+
+** Intro
+
+** Hypotheses
+
+** Design
+
+** Configuration
+
+** Procedure
+
+** Subjects
+
+
+* Results
+
+
+* Discussion
+
+
+* Conclusions
+
+
+* References

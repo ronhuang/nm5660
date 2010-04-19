@@ -1,0 +1,181 @@
+# CNM HONOURS PROGRAMME:
+
+# PROPOSAL FOR NM5660 INDEPENDENT STUDY MODULE (ISM)
+
+Semester 2, AY2009-2010
+
+## Name of student:
+
+Yih-Lun Huang
+
+
+## Date of submission:
+
+15 Jan 2010
+
+
+## Name of supervisor:
+
+Timothy Marsh
+
+
+## Title of Project:
+
+The limitations of transparent interaction in HCI
+
+
+## Aim of proposed Project:
+
+As a software engineer, I have always been a strict follower of
+creating software with user-friendly, minimalistic and transparent
+interactions. This was until I was introduced to a book "Windows and
+Mirrors" by Jay David Bolter and Diane Gromala. The book talks about
+two kind of people, the structuralists and designers, and how both of
+them formulated the world of digital designs.
+
+The gurus of the HCI fields (structuralists) have been advocating the
+importance of transparency of the interaction. They drew us a future
+where all the computations are hidden from us. All the computers will
+anticipate our needs and react as if there are no explicit
+instructions from us. Effectively rendering the computing devices and
+technologies invisible.
+
+However, designers on the other hand, claim that transparency is a
+myth and has been overly simplified and exaggerated. "The danger of
+transparency is that the interface will mask the operation of the
+system exactly when the user needs to see and understand what the
+system is doing." They believe that interactions should be an
+equivalent between transparency and reflective.
+
+Though not thoroughly convinced, it did prompted me to think about
+whether I was being too obsess with achieving transparency, the
+limitations of transparency, or if there is an even grander theory
+behind this. So for this independent study module, I wish to further
+explore the limitations of transparent interactions in HCI.
+
+## Proposed outline of the study report:
+
+ * HCI gurus
+ * Designers
+ * Creativity
+ * Phone as interface
+
+### Introduction
+
+Multi-touch touchpad has been made popular by the introduction of the
+Apple MacBook Air. It provides intuitive features such as zooming,
+rotating and swiping which were not available in the traditional
+touchpad or mouse. These additional features have greatly improved the
+user experience of the touchpad users and have made multi-touch
+touchpad a good competitor to the dominating king of pointing devices,
+the mouse.
+
+Unfortunately, the interaction between the human and the touchpad is
+restricted to the physical region of the touchpad. And since the
+touchpad is physically attached to the laptop, one has to be near the
+laptop to use the touchpad. This might be an issue when the user
+wishes to have a more comfortable position, such as relaxing on the
+sofa in the living room, while interacting with the touchpad.
+
+In this independent study module, we will design a novel system that
+is capable of providing the user experience of multi-touch touchpad,
+but without the bounding constraint. The system will be used as the
+platform for us to experiment over the various issues of transparent
+interactions in HCI.
+
+### Method
+
+This will include literature reviews on the related technologies to
+build the system and also the related topics on transparent
+interactions in HCI. Based on the result of the literature reviews, we
+will design and implementation the actual system. An user evaluation
+will be in order at the end to determine whether the proposed idea is
+effective.
+
+### Results
+
+ * A novel system to provide users access to home appliances in
+   comfortable and relaxed positions.
+
+ * Based on the result of the user evaluations and discussions, short
+   paper draft will be proposed at the end, targeting conferences such
+   as CHI, UIST or CSCW.
+
+### Discussion
+
+ * What enabling technologies are suitable for providing the following
+   requirements for user interaction device: self-contained, mobile,
+   multi-touch capability, and easy to setup?
+
+ * How can we evaluate such an user interaction device?
+
+ * How to design interactions that have good balance between
+   transparency and reflective?
+
+ * How will the results from this study be beneficial to other
+   research topics?
+
+## Mode of assessment:
+
+ * Report on the literature reviews: 20%
+
+ * Prototype of the user interaction device: 40%
+
+ * Final report: 40%
+
+ * Total: 100%
+
+## Reading list:
+
+ * Bolter, J. D. and Gromala, D. Windows and Mirrors: Interaction
+   Design, Digital Art, and the Myth of Transparency. MIT Press, 2003
+
+ * Dourish, P. Where the Action Is: The Foundations of Embodied
+   Interaction. The MIT Press, 2004
+
+ * Bardram, J. and Bertelsen, O. W. Supporting the Development of
+   Transparent Interaction. Lecture Notes In Computer Science;
+   Vol. 1015, 1995
+
+ * Nardi, B. A. Context and Consciousness: Activity Theory and
+   Human-Computer Interaction. The MIT Press, 1995
+
+ * Jenkins, H. Convergence Culture: Where Old and New Media
+   Collide. NYU Press, 2006
+
+## Schedule/Plan of Work:
+
+ * 11 Jan 2010 ~ 19 Feb 2010: literature review
+ * 22 Feb 2010 ~ 9 Apr 2010: implementation, evaluations
+ * 12 Apr 2010 ~ 16 Apr 2010: produce final report
+
+## Supervisor's Role:
+
+ * Assist the student to contextualize these research topics.
+
+ * Supervise the design and implementation of the prototype systems.
+
+ * Broaden the perspective of the student to the trending issues of
+   the related topics.
+
+ * Assist the student to write/revise the research papers in the level
+   of the major international conferences in the related fields.
+
+## Contact hours:
+
+TBA
+
+## Student Obligations:
+
+ * Design and implement the user interaction device for accessing home
+   appliances in comfortable and relaxed positions.
+
+ * Write final report as drafts for the international conferences.
+
+ * Maintain a good channel of communication with the supervisor on the
+   research topics.
+
+## Signature of student:
+
+## Date of submitted:
+
