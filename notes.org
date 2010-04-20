@@ -74,3 +74,12 @@ between user and tool, with the tool seeming to disappear.
 * Examples
 - Confusion between Wifi and Bluetooth
 - PS2 O and X buttons
+
+
+* The Inmates Are Running the Asylum
+Although programmers work hard to make their software easy to use,
+their frame of reference is themselves and as a result they make it
+easy for other software engineers, not normal human beings.  He argues
+that programmers have too much influence over the design of the human
+interface and due to a lack of skills in this area do a poor job of
+it.
