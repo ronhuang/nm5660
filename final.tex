@@ -5,6 +5,8 @@
 
 \documentclass{acm_proc_article-sp}
 
+\usepackage{verbatim}
+
 \begin{document}
 
 \title{Investigation of the relationship between transparency and user
@@ -56,24 +58,51 @@ it also provides a ``cool'' new feature to the original product or
 system, the test is not removed afterward but instead becomes part of
 the product or system.
 
-This is indicated by Alan Cooper \cite{inmates:cooper} that although
-software engineers work hard to make their software easy to use, their
-frame of reference is themselves and as a result they make it easy for
-other software engineers, instead of normal users. He explains that
-since having too much influence over the design of the human interface
-and the lack of skills in this area, software engineers do a poor job
-of it.
+This is indicated by Alan Cooper that although software engineers work
+hard to make their software easy to use, their frame of reference is
+themselves and as a result they make it easy for other software
+engineers, instead of normal users. He explains that since having too
+much influence over the design of the human interface and the lack of
+skills in this area, software engineers do a poor job of it
+\cite{inmates:cooper}.
+
+% TODO: talk about user-centered design and usability
+This phenomenon will last until the software engineers are introduced
+to the concept of usability. Dated back since the 1980s, this concept
+was introduced by the published studies and analysis papers from a
+dedicated group of mostly psychologists and human factors researchers
+\cite{human:rubinstein, friendly:simpson, human:shneiderman,
+  human:brown, software:dumas}. The philosophy behind this is that
+every stage of the development process---requirements, design,
+implementation, verification, and maintenance---are given great
+attention to the needs and limitations of the users.
+
+In this user-oriented development, contrast to the previous
+technology-oriented or feature-oriented development, software
+engineers work with experts from various specific fields---and most
+importantly, also collaborate closely with the actual users---to bring
+efficient, easy-to-learn, easy-to-memorize, and non-disruptive product
+or system to the user. They form psychology and physiology model of
+the user to anticipate their needs and limitations. And from that
+model, the software engineers can build the product or system that
+would perfectly fit the users.
+
+% Bring up transparency, disrupt
+From their field research, Holtzblatt et al.\ show that elements of an
+application design can disrupt users' work. They observed that only
+when the users are not disrupted by the computer system will they
+remain in the flow of their work and experience interface transparency
+\cite{transparency:holtzblatt}. This interface transparency is the
+ultimate goal for usability studies and is considered as the ideal
+relationship between user and tool with the tool seeming to disappear
+by Rutkoski \cite{transparency:rutkoski}.
+
+% danger of transparency
 
 
 
 
-This is because they think in turn of the technology instead of the
-user. They encountered the wonderful of world of engineering and
-cannot wait to fully utilize the knowledge they just acquired.
-
-
-
-
+\begin{comment}
 % TODO: describe more on the two groups of people.
 Most software engineers who have been through HCI modules are usually
 educated to create software with user-friendly, minimalistic and
@@ -111,11 +140,17 @@ inform design and evaluation has been widespread in HCI. Such that,
 researchers are proposing user experience encapsulating the idea of
 transparency. Hence, the relationship between transparency and user
 experience will also be examined in this ISM.
+\end{comment}
+
 
 \section{Related Works}
 % TODO: mention Universal usability
+FIXME
 
-\bibliographystyle{abbrv}
+\section{Conclusion}
+FIXME
+
+\bibliographystyle{apalike}
 \bibliography{final}
 
 \end{document}
