@@ -6,6 +6,7 @@
 \documentclass{acm_proc_article-sp}
 
 \usepackage{verbatim}
+\usepackage{natbib}
 
 \begin{document}
 
@@ -60,20 +61,21 @@ and time are already spent on making the new technology functional and
 it also provides a ``cool'' new feature to the original product, the
 test is not removed afterward but instead becomes part of the product.
 
-This is indicated by Alan Cooper that although software engineers work
-hard to make their software easy to use, their frame of reference is
-themselves and as a result they make it easy for other software
-engineers, instead of normal users. He explains that since having too
-much influence over the design of the human interface and the lack of
-skills in this area, software engineers do a poor job of it
-\cite{inmates:cooper}.
+This is indicated by Alan Cooper \citeyearpar{inmates:cooper} that
+although software engineers work hard to make their software easy to
+use, their frame of reference is themselves and as a result they make
+it easy for other software engineers, instead of normal users. He
+explains that since having too much influence over the design of the
+human interface and the lack of skills in this area, software
+engineers do a poor job of it.
 
+\subsection{Usability and Interface Transparency}
 % TODO: talk about user-centered design and usability
 This phenomenon will last until the software engineers are introduced
 to the concept of usability. Dated back since the 1980s, this concept
 was introduced by the published studies and analysis papers from a
 dedicated group of mostly psychologists and human factors researchers
-\cite{human:rubinstein, friendly:simpson, human:shneiderman,
+\citep{human:rubinstein, friendly:simpson, human:shneiderman,
   human:brown, software:dumas}. The philosophy behind this is that
 every stage of the development process---requirements, design,
 implementation, verification, and maintenance---are given great
@@ -90,35 +92,36 @@ software engineers can build the product that would perfectly fit the
 users.
 
 % Bring up transparency, disrupt
-From their field research, Holtzblatt et al.\ show that elements of an
-application design can disrupt users' work. They observed that only
-when the users are not disrupted by the computer system will they
-remain in the flow of their work and experience interface transparency
-\cite{transparency:holtzblatt}. This interface transparency is the
-ultimate goal for usability studies and is considered as the ideal
-relationship between user and tool with the tool seeming to disappear
-by Rutkoski \cite{transparency:rutkoski}.
+From their field research, \citet{transparency:holtzblatt} show that
+elements of an application design can disrupt users' work. They
+observed that only when the users are not disrupted by the computer
+system will they remain in the flow of their work and experience
+interface transparency. This interface transparency is the ultimate
+goal for usability studies and is considered as the ideal relationship
+between user and tool with the tool seeming to disappear by
+\citet{transparency:rutkoski}.
 
+\subsection{User Experience}
 % danger of transparency
 However, the idea of striving for interface transparency is also
 challenged by others. Bolter and Gromala talked about the myth of
 transparency: \textit{The danger of transparency is that the interface
   will mask the operation of the system exactly when the user needs to
   see and understand what the system is doing}
-\cite{windows:bolter}. As described by Norman, the designers and the
+\citep{windows:bolter}. As described by Norman, the designers and the
 users each have their own conceptual models or mental images of the
 product. Ideally, these two models should be identical for the users
 to understand and use the product properly. Unfortunately, this might
 not always be the case. So the users often have to form their own
 model exclusively from the observation of the product, whether from
 the exterior guise, the feedback provided, the responses from blogger,
-documentations, and etc \cite{design:norman}. Therefore, if the
+documentations, and etc \citep{design:norman}. Therefore, if the
 product was invisible or transparent to the users, how could it act as
 a medium to help the users to understand itself? Nor can it be
 engaging or communicative. This is why Bolter and Gromala argue that
 transparency is only half the story---each digital design should move
 back and forth between being transparent and being reflective
-\cite{windows:bolter}.
+\citep{windows:bolter}.
 
 % other direction: user experience
 % difficulty of user experience
@@ -129,7 +132,7 @@ halves of the story, which all fall under the umbrella term of user
 experience. Many models have been proposed, however the universal
 definition for user experience is still not well understood nor fully
 clarified. There are several reasons why this is so, according to the
-research from Law et al. \cite{ux:law}:
+research from \citet{ux:law}:
 \begin{enumerate}
   \item User experience is associated with a wide range of vague and
     dynamic concepts, including emotional, affective, experiential,
@@ -145,8 +148,16 @@ research from Law et al. \cite{ux:law}:
 \end{enumerate}
 
 % problem I am trying to solve
+\subsection{Study Goal}
+With all this being said, this article is not about yet another
+attempt to develop an uniform view on user experience. Numerous
+literature, conferences, and workshops have already attempted to
+address this topic, such as 
 
-% propose of the test
+
+% Seems that usability has to be involved with user experience?
+% Future of digital design still involve usability engineering.
+% My background as software engineer and preference toward minimalistic.
 
 
 
@@ -156,10 +167,10 @@ research from Law et al. \cite{ux:law}:
 Most software engineers who have been through HCI modules are usually
 educated to create software with user-friendly, minimalistic and
 transparent interactions, which is based on the famous dictum from
-Donald Norman \cite{design:norman}. But in fact, there is another
+Donald Norman \citet{design:norman}. But in fact, there is another
 group of people who are claiming that the dictum may be flawed and
 incomplete. As suggested from the book by Jay David Bolter and Diane
-Gromala \cite{windows:bolter}, these two groups of people, the
+Gromala \citet{windows:bolter}, these two groups of people, the
 structuralists and designers, have their own approaches to formulate
 the world of digital designs.
 

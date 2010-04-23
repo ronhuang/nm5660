@@ -83,3 +83,7 @@ easy for other software engineers, not normal human beings.  He argues
 that programmers have too much influence over the design of the human
 interface and due to a lack of skills in this area do a poor job of
 it.
+
+* Future of digital design
+- Usability engineering
+- Interaction design
