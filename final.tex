@@ -8,8 +8,11 @@
 \usepackage{verbatim}
 \usepackage{natbib}
 
+\hyphenation{trans-pa-ren-cy}
+
 \begin{document}
 
+% TODO: change to ``Toward...''?
 \title{Investigation of the relationship between transparency and user
   experience}
 
@@ -25,12 +28,14 @@
 FIXME.
 \end{abstract}
 
+
 \category{H.5.2}{Information Interfaces And Presentation}{User
   Interface}[input devices and strategies]
 
 \terms{Design, Algorithms, Measurement}
 
 \keywords{Input device, multi-touch, touchpad, lazy}
+
 
 \section{Introduction}
 When junior software engineers are given the task of designing a new
@@ -101,38 +106,37 @@ goal for usability studies and is considered as the ideal relationship
 between user and tool with the tool seeming to disappear by
 \citet{transparency:rutkoski}.
 
-\subsection{User Experience}
+\subsection{Danger of Transparency}
 % danger of transparency
 However, the idea of striving for interface transparency is also
-challenged by others. Bolter and Gromala talked about the myth of
+challenged by others. \citet{windows:bolter} talked about the myth of
 transparency: \textit{The danger of transparency is that the interface
   will mask the operation of the system exactly when the user needs to
-  see and understand what the system is doing}
-\citep{windows:bolter}. As described by Norman, the designers and the
-users each have their own conceptual models or mental images of the
-product. Ideally, these two models should be identical for the users
-to understand and use the product properly. Unfortunately, this might
-not always be the case. So the users often have to form their own
-model exclusively from the observation of the product, whether from
-the exterior guise, the feedback provided, the responses from blogger,
-documentations, and etc \citep{design:norman}. Therefore, if the
-product was invisible or transparent to the users, how could it act as
-a medium to help the users to understand itself? Nor can it be
-engaging or communicative. This is why Bolter and Gromala argue that
-transparency is only half the story---each digital design should move
-back and forth between being transparent and being reflective
-\citep{windows:bolter}.
+  see and understand what the system is doing}. As described by
+\citet{design:norman}, the designers and the users each have their own
+conceptual models or mental images of the product. Ideally, these two
+models should be identical for the users to understand and use the
+product properly. Unfortunately, this might not always be the case. So
+the users often have to form their own model exclusively from the
+observation of the product, whether from the exterior guise, the
+feedback provided, the responses from blogger, documentations, and
+etc. Therefore, if the product was invisible or transparent to the
+users, how could it act as a medium to help the users to understand
+itself? Nor can it be engaging or communicative.
 
 % other direction: user experience
 % difficulty of user experience
-The community of human-computer interaction (HCI) quickly embraced the
+The community of human-computer interaction quickly embraced the
 idea that solely pursuing for interface transparency and performance
-is not enough, and a richer model is required to encapsulate both
-halves of the story, which all fall under the umbrella term of user
-experience. Many models have been proposed, however the universal
-definition for user experience is still not well understood nor fully
-clarified. There are several reasons why this is so, according to the
-research from \citet{ux:law}:
+is not enough, and a richer model is required to encapsulate the other
+perspectives of the interaction, which fall under the umbrella term of
+user experience. This may include addressing the human needs beyond
+the instrumental; stressing affective and emotional aspects of the
+interaction; and dealing with the nature of experience
+\citep{ux:hassenzahl}. Many models have been proposed, however the
+universal definition for user experience is still not well understood
+nor fully clarified. There are several reasons why this is so,
+according to the research from \citet{ux:law}:
 \begin{enumerate}
   \item User experience is associated with a wide range of vague and
     dynamic concepts, including emotional, affective, experiential,
@@ -148,72 +152,94 @@ research from \citet{ux:law}:
 \end{enumerate}
 
 % problem I am trying to solve
-\subsection{Study Goal}
+\subsection{Research Goal}
 With all this being said, this article is not about yet another
-attempt to develop an uniform view on user experience. Numerous
+attempt to develop a common view on user experience. Numerous
 literature, conferences, and workshops have already attempted to
 address this topic, such as \citet{early:forlizzi},
 \citet{emotional:norman}, \citet{experience:forlizzi},
 \citet{action:dourish}, \citet{ux:hassenzahl},
 \citet{experience:desmet}, and \citet{ux:law}.
 
+For sake of completeness, some view points on user experience will
+still be discussed in the following section. However, the main
+research goal for this article is to further explore interface
+transparency within the field of user experience. Interface
+transparency is still a crucial factor in this field, even though user
+experience has been the prominent subject in recent years. In his
+article, \citet{future:memmel} suggests that usability engineering and
+interaction design will be the more concrete premises and disciplines
+below the umbrella term of user experience. This complies with the
+argument from \citet{windows:bolter} that transparency is only half
+the story---each digital design should move back and forth between
+being transparent and being reflective.
 
-% Seems that usability has to be involved with user experience?
-% Future of digital design still involve usability engineering.
-% My background as software engineer and preference toward minimalistic.
+Transparent and reflective, two contrasting albeit interesting point
+of views prompted people to think about whether they have been too
+obsessed with achieving interface transparency, the benefits and
+limitations of interface transparency, measuring interface
+transparency. Added to this, the emergence of the user experience is
+an attempt to inform design and evaluation has been widespread in
+HCI. Such that, researchers are proposing user experience
+encapsulating the idea of transparency. Hence, the relationship
+between transparency and user experience will also be examined.
+
+% Talk about the experiment.
+\subsection{Experiment}
+A new human interface device and application will be developed to
+investigate interface transparency within user experience. This new
+device will provide similar functionality to the multi-touch touchpad
+that comes with recent laptops. However, the device will enable the
+users to perform the usual tasks of multi-touch touchpad on any
+surface, as if the physical touchpad is underneath their hand. The
+development of this new device is actually based upon our previous
+study \citep{lmnt:huang}, where the first-generation prototype was
+built and some preliminary studies were conducted. Much of the
+feedback from the first-generation prototype are taken into
+consideration when designing the new device for this study.
+
+% Application based on Baba Painter.
+An application will be developed to accompany the new human interface
+device. This application will too be an extension to our other
+previous study, an interactive painting and collaboration reviewing
+system \citep{baba:abeyrathne}. However, since the instrument will be
+replaced by the new device developed in this study, the scenario and
+the users will be adjusted accordingly. We planed to target the
+application to tots. The application will allow small children to
+scrabble intuitively on any surface and be creative wherever they are,
+whether on the dining table of a restaurant or on the wall in the
+bedroom, meanwhile still avoid messing up the place.
+
+% User, product, context
 
 
+\section{Existing Work}
+FIXME
 
 
-\begin{comment}
-% TODO: describe more on the two groups of people.
-Most software engineers who have been through HCI modules are usually
-educated to create software with user-friendly, minimalistic and
-transparent interactions, which is based on the famous dictum from
-Donald Norman \citet{design:norman}. But in fact, there is another
-group of people who are claiming that the dictum may be flawed and
-incomplete. As suggested from the book by Jay David Bolter and Diane
-Gromala \citet{windows:bolter}, these two groups of people, the
-structuralists and designers, have their own approaches to formulate
-the world of digital designs.
+\section{User Experience}
+FIXME
 
-Leading researchers in the HCI fields (structuralists) have been
-advocating the importance of transparency of the interaction. They
-drew us a future where all the computations are hidden from us. All
-the computers will anticipate our needs and react as if there are no
-explicit instructions from us. Effectively rendering the computing
-devices and technologies invisible.
 
-However, designers on the other hand, claim that transparency is a
-myth and has been overly simplified and exaggerated. ``The danger of
-transparency is that the interface will mask the operation of the
-system exactly when the user needs to see and understand what the
-system is doing.'' They believe that interactions should be an
-equivalent between transparency and reflective.
+\section{Interface Transparency}
+FIXME
 
-These are both very interesting point of views and prompted people to
-think about whether they have been too obsessed with achieving
-transparency, the benefits and limitations of transparency, measuring
-transparency, and if there is an even grander theory behind this. So
-for this independent study module, further exploration of transparent
-interactions in HCI will be conducted.
 
-Added to this, the emergence of the user experience is an attempt to
-inform design and evaluation has been widespread in HCI. Such that,
-researchers are proposing user experience encapsulating the idea of
-transparency. Hence, the relationship between transparency and user
-experience will also be examined in this ISM.
-\end{comment}
+\section{Planned Experiment}
+FIXME
 
 
 \section{Related Works}
 % TODO: mention Universal usability
 FIXME
 
+
 \section{Conclusion}
 FIXME
 
+
 \bibliographystyle{apalike}
 \bibliography{final}
+
 
 \end{document}
