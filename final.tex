@@ -26,7 +26,7 @@
 
 \maketitle
 \begin{abstract}
-FIXME.
+[FIXME]
 \end{abstract}
 
 
@@ -77,14 +77,16 @@ Software engineers, like engineers in the other engineering
 disciplines, rely on standards---codified and enforced from good
 practices---to improve the quality and lower the cost of software
 development \citep{practice:ipenz}. These standards can be in the form
-of example, guidelines or even abstractified into patterns. Patterns,
+of examples, guidelines or even abstractified into patterns. Patterns,
 as described by \citet{patterns:griffiths}, are abstractions from the
 specific examples, which give patterns their generative power. They do
 not supply immediate solutions to the problems, however. Creativity is
-required for the software engineers to implement the patterns. They
-also advocated that patterns are more advantageous than guidelines.
+required for the software engineers to implement the
+patterns. Patterns are also considered more advantageous than
+guidelines because they are more related to a context and are problem
+centered \citep{patterns:welie}.
 
-The traditional software patterns popularized by the ``Gang of Four''
+The traditional software patterns popularized by the `Gang of Four'
 \citep{patterns:gamma} have shown tremendous importance to the
 software development domain. They provide valuable engineering
 solutions to difficult technical problems or elegant tricks to build
@@ -117,14 +119,58 @@ However the user experience we are mentioning here is the user
 experience for the \textit{users}, the actual users who will be using
 the software. By implementing these patterns of user experience into
 the design, the users can gain better user experience with the
-product. A simplified example for patterns of user experience may say:
-``You can change your mind immediately.'' The software engineers may
-implement this pattern by adding the `undo' feature into the software.
+product. Table~\ref{tab:shield} gives a simple example of patterns of
+user experience for error prevention \citep{patterns:welie}. Many
+patterns of user experience from various facets of human-computer
+interaction are also being published or discussed.  For instance,
+\citet{patterns:tidwell} discussed about general subjects in
+human-computer interaction; \citet{touch:boudreaux} talked exclusively
+on user experience for multi-touch input device;
+\citet{participatory:dearden} examined the patterns to enable users to
+participate in the product design.
+
+\begin{table}[!t]
+  \caption{Pattern of user experience `The Shield'.}
+  \label{tab:shield}
+  \begin{center}
+    \begin{tabular}{| p{0.2\columnwidth} || p{0.7\columnwidth} |}
+      \hline
+      Name & The Shield. \\ \hline
+
+      Problem & The user may accidentally select a function that has
+      irreversible (side) effects. \\ \hline
+
+      Usability Principle & Error management. \\ \hline
+
+      Context & The user needs to be protected against unintended or
+      accidental actions that have irreversible (side) effects. The
+      (side) effects may lead to unsafe or highly undesired
+      situations. For example the unintended deletion or overwriting
+      of files. Do not use for actions that are reversible. \\ \hline
+
+      Forces & The user is striving for speed while trying to avoid
+      mistakes. \\ \hline
+
+      Solutions & Protect the user by inserting a shield. \\ \hline
+
+      Usability Impact & Increased safety, less errors and higher
+      satisfaction. However, it requires extra user action which leads
+      to lower performance time. \\ \hline
+
+      Rationale & The extra layer causes the user to require 2
+      repetitive mistakes instead of 1. The safe default decreases the
+      chances for a second mistake. \\ \hline
+
+      Known uses & Microsoft Explorer, Apple Finder \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
 
 \subsection{For Interface Transparency}
 % Form pattern and guidelines for software engineer, with respect to
 % interface transparency.
-
+[Elaborated paragraphs explaining interface transparency as my second
+  research interest.]
 
 Added to this, the emergence of the user experience is an attempt to
 inform design and evaluation has been widespread in HCI. Such that,
@@ -134,17 +180,86 @@ interface transparency.
 Hence, the relationship between transparency and user
 experience will also be examined.
 
+\subsection{Research Goal}
+[Elaborated paragraphs combining patterns of user experience and
+  interface transparency as my research goal.]
+
+% problem I am trying to solve
+With all this being said, this article is not about yet another
+attempt to develop a common view on user experience. Numerous
+literature, conferences, and workshops have already attempted to
+address this topic, such as \citet{early:forlizzi},
+\citet{emotional:norman}, \citet{experience:forlizzi},
+\citet{action:dourish}, \citet{ux:hassenzahl},
+\citet{experience:desmet}, and \citet{ux:law}.
+
+For sake of completeness, some view points on user experience will
+still be discussed in the following section. However, the main
+research goal for this article is to further explore interface
+transparency within the field of user experience. Interface
+transparency is still a crucial factor in this field, even though user
+experience has been the prominent subject in recent years. In his
+article, \citet{future:memmel} suggests that usability engineering and
+interaction design will be the more concrete premises and disciplines
+below the umbrella term of user experience. This complies with the
+argument from \citet{windows:bolter} that transparency is only half
+the story---each digital design should move back and forth between
+being transparent and being reflective.
+
+Transparent and reflective, two contrasting albeit interesting point
+of views prompted people to think about whether they have been too
+obsessed with achieving interface transparency, the benefits and
+limitations of interface transparency, measuring interface
+transparency. Added to this, the emergence of the user experience is
+an attempt to inform design and evaluation has been widespread in
+HCI. Such that, researchers are proposing user experience
+encapsulating the idea of transparency. Hence, the relationship
+between transparency and user experience will also be examined.
+
+% Talk about the experiment.
+\subsection{Experiment}
+[FIXME]
+
+A new human interface device and application will be developed to
+investigate interface transparency within user experience. This new
+device will provide similar functionality to the multi-touch touchpad
+that comes with recent laptops. However, the device will enable the
+users to perform the usual tasks of multi-touch touchpad on any
+surface, as if the physical touchpad is underneath their hand. The
+development of this new device is actually based upon our previous
+study \citep{lmnt:huang}, where the first-generation prototype was
+built and some preliminary studies were conducted. Much of the
+feedback from the first-generation prototype are taken into
+consideration when designing the new device for this study.
+
+% Application based on Baba Painter.
+An application will be developed to accompany the new human interface
+device. This application will too be an extension to our other
+previous study, an interactive painting and collaboration reviewing
+system \citep{baba:abeyrathne}. However, since the instrument will be
+replaced by the new device developed in this study, the scenario and
+the users will be adjusted accordingly. We planed to target the
+application to tots. The application will allow small children to
+scrabble intuitively on any surface and be creative wherever they are,
+whether on the dining table of a restaurant or on the wall in the
+bedroom, meanwhile still avoid messing up the place.
+
+% User, product, context
+
 \subsection{Layout}
-In the following sections, ...
-FIXME.
+[Layout for the following sections.]
 
 
+\section{Related Works}
+% TODO: mention Universal usability
+[FIXME]
+
+\citet{unix:raymond}
 
 
+\section{User Experience}
+[FIXME]
 
-
-
-\subsection{Technology-oriented}
 When junior software engineers are given the task of designing a new
 product or system\footnote{In the following text, ``product'' is used
   as a general term to refer to a product, system, service, or
@@ -258,94 +373,20 @@ according to the research from \citet{ux:law}:
     product is being used, and more.
 \end{enumerate}
 
-% problem I am trying to solve
-\subsection{Research Goal}
-With all this being said, this article is not about yet another
-attempt to develop a common view on user experience. Numerous
-literature, conferences, and workshops have already attempted to
-address this topic, such as \citet{early:forlizzi},
-\citet{emotional:norman}, \citet{experience:forlizzi},
-\citet{action:dourish}, \citet{ux:hassenzahl},
-\citet{experience:desmet}, and \citet{ux:law}.
-
-For sake of completeness, some view points on user experience will
-still be discussed in the following section. However, the main
-research goal for this article is to further explore interface
-transparency within the field of user experience. Interface
-transparency is still a crucial factor in this field, even though user
-experience has been the prominent subject in recent years. In his
-article, \citet{future:memmel} suggests that usability engineering and
-interaction design will be the more concrete premises and disciplines
-below the umbrella term of user experience. This complies with the
-argument from \citet{windows:bolter} that transparency is only half
-the story---each digital design should move back and forth between
-being transparent and being reflective.
-
-Transparent and reflective, two contrasting albeit interesting point
-of views prompted people to think about whether they have been too
-obsessed with achieving interface transparency, the benefits and
-limitations of interface transparency, measuring interface
-transparency. Added to this, the emergence of the user experience is
-an attempt to inform design and evaluation has been widespread in
-HCI. Such that, researchers are proposing user experience
-encapsulating the idea of transparency. Hence, the relationship
-between transparency and user experience will also be examined.
-
-% Talk about the experiment.
-\subsection{Experiment}
-A new human interface device and application will be developed to
-investigate interface transparency within user experience. This new
-device will provide similar functionality to the multi-touch touchpad
-that comes with recent laptops. However, the device will enable the
-users to perform the usual tasks of multi-touch touchpad on any
-surface, as if the physical touchpad is underneath their hand. The
-development of this new device is actually based upon our previous
-study \citep{lmnt:huang}, where the first-generation prototype was
-built and some preliminary studies were conducted. Much of the
-feedback from the first-generation prototype are taken into
-consideration when designing the new device for this study.
-
-% Application based on Baba Painter.
-An application will be developed to accompany the new human interface
-device. This application will too be an extension to our other
-previous study, an interactive painting and collaboration reviewing
-system \citep{baba:abeyrathne}. However, since the instrument will be
-replaced by the new device developed in this study, the scenario and
-the users will be adjusted accordingly. We planed to target the
-application to tots. The application will allow small children to
-scrabble intuitively on any surface and be creative wherever they are,
-whether on the dining table of a restaurant or on the wall in the
-bedroom, meanwhile still avoid messing up the place.
-
-% User, product, context
-
-
-\section{Existing Work}
-FIXME
-
-
-\section{User Experience}
-FIXME
-
 
 \section{Interface Transparency}
-FIXME
+[FIXME]
 % Talk about various other non interface transparency.
 
 % Talk about Linux and Windows as example for transparency.
 
 
 \section{Planned Experiment}
-FIXME
-
-
-\section{Related Works}
-% TODO: mention Universal usability
-FIXME
+[FIXME]
 
 
 \section{Conclusion}
-FIXME
+[FIXME]
 
 
 \bibliographystyle{apalike}
