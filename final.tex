@@ -165,6 +165,39 @@ transparency.
 \end{table}
 
 \subsection{For Interface Transparency}
+% * Different meanings of interface transparency.
+% * Brief mentioning of interface transparency in the history of
+%   human-computer interaction.
+
+Interface transparency often have different meanings when presented to
+diverse set of audiences. For expert system, interface transparency is
+important for gaining trust to the users [FIXME].
+
+Similarly, for Unix power users following the Unix philosophy,
+interface transparency might suggest that the software is capable of
+churning out excessive amount of messages when error occurred. These
+power users are able to interpret the messages and partially `replay'
+the flow of control\footnote{Refers to the order in which the
+  individual statements or instructions of a program are executed or
+  evaluated.}  for the software. The software at fault is not a
+completely opaque black box to them with the help of the
+messages. They can sort of see through the software and figure out the
+problem hiding underneath \citep{unix:raymond}.
+
+On the other hand, normal users do not usually consider excessive
+messages as interface transparency. A common action when normal users
+encounter unexpected information: they try to get rid of it as soon as
+possible \citep{oldnew:chen}. To them, the information are regarded as
+either gibberish or elaborated way of describing something
+dangerous. This is because the information is unforeseen and cannot
+fit into the conceptual model which they had previously formed for the
+software. Hence, instead of being treated as interface transparency,
+the excessive messages are more like an unknown dark spot occluding
+the flow of experience\footnote{Refers to the mental state of
+  operation in which a person is fully immersed in a feeling of full
+  involvement in the process of an activity.}.
+
+
 % Form pattern and guidelines for software engineer, with respect to
 % interface transparency.
 [Elaborated paragraphs explaining interface transparency as my second
@@ -379,6 +412,40 @@ according to the research from \citet{ux:law}:
     be extended to include multiple users, environment while the
     product is being used, and more.
 \end{enumerate}
+
+\subsection{Definitions}
+Table \ref{tab:definitions} has some sample definitions of user
+experience \citep{definition:law}.
+
+\begin{table}[!t]
+  \caption{Various definitions of User Experience.}
+  \label{tab:definitions}
+  \begin{center}
+    \begin{tabular}{| p{0.2\columnwidth} || p{0.7\columnwidth} |}
+      \hline
+
+      Lauralee Alben: & All the aspects of how people use an
+      interactive product: the way it feels in their hands, how well
+      they understand how it works, how they feel about it while
+      they're using it, how well it serves their purposes, and how
+      well it fits into the entire context in which they are using
+      it. \\ \hline
+
+      Nielsen Norman Group: & All aspects of the end-user's
+      interaction with the company, its services, and its
+      product. \\ \hline
+
+      Marc Hassenzahl \& Noam Tractinsky: & A consequence of a user's
+      internal state (predispositions, expectations, needs,
+      motivation, mood, etc.), the characteristics of the designed
+      system (e.g. complexity, purpose, usability, functionality,
+      etc.) and the context (or the environment) within which the
+      interaction occurs (e.g. organizational/social setting,
+      meaningfulness of the activity, voluntariness of use, etc.)
+      \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
 
 
 \section{Interface Transparency}

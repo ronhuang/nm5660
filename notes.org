@@ -63,6 +63,8 @@ anticipated use of a product, system or service.
 * Information Transparency
 Is it required to have transparent user experience?
 
+* Transparency in UNIX
+
 
 
 * Transparency in Recommender System
