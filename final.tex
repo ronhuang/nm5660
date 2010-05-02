@@ -73,7 +73,7 @@ time frame, where opportunities are still around to make significant
 contributions to the human knowledge, it is actually quite troublesome
 for practitioners in the field of human-computer interaction. And in
 the case of this article, we specifically focus our attention on
-software engineers.
+software developers.
 
 Among human-computer interaction practitioners from all walks of life,
 software developers are of special interest to us: software developers
@@ -122,48 +122,89 @@ to participate in the product design.
 
 \section{Patterns of User Experience}
 \label{sec:pux}
-Software engineers, like engineers in the other engineering
+Software developers, like engineers in the other engineering
 disciplines, rely on standards---codified and enforced from good
 practices---to improve the quality and lower the cost of software
 development \citep{practice:ipenz}. These standards can be in the form
 of examples, guidelines or even abstractified into patterns.
 
-\subsection{Patterns}
-[FIXME: definition of patterns needed.]
-
 Patterns, as described by \citet{patterns:griffiths}, are abstractions
 from the specific examples, which give patterns their generative
 power. They do not supply immediate solutions to the problems,
-however. Creativity is required for the software engineers to
+however. Creativity is required for the software developers to
 implement the patterns. Patterns are also considered more advantageous
 than guidelines because they are more related to a context and are
 problem centered \citep{patterns:welie}.
 
-\subsection{Of User Experience}
-The traditional software patterns popularized by the `Gang of Four'
-\citep{patterns:gamma} have shown tremendous importance to the
-software development domain. They provide valuable engineering
-solutions to difficult technical problems or elegant tricks to build
-user interfaces. Mastering software patterns is so influential that it
-is often regarded as an indication to distinguishing rockstar software
-engineers from normal ones \citep{rockstar:iskold}.
+Software patterns are of great values to software developers. They
+provided valuable engineering solutions to difficult technical
+problems or elegant tricks to build user interfaces. Mastering
+software patterns is so influential that it is often regarded as an
+indication to distinguishing rockstar software developers from
+mediocre ones \citep{rockstar:iskold}. But what are patterns?
 
+\subsection{Patterns}
+The term ``pattern'' originated from \citet{timeless:alexander}, where
+the author was looking for structures of urban planning and building
+architecture that are good for people and have positive influence on
+them by improving their comfort and their quality of life
+\citep{patterns:appleton}. He described:
+\begin{quote}
+Each pattern is a three-part rule, which expresses a relation between
+a certain context, a problem, and a solution.
+
+As an element in the world, each pattern is a relationship between a
+certain context, a certain system of forces which occurs repeatedly in
+that context, and a certain spatial configuration which allows these
+forces to resolve themselves.
+
+As an element of language, a pattern is an instruction, which shows
+how this spatial configuration can be used, over and over again, to
+resolve the given system of forces, wherever the context makes it
+relevant.
+
+The pattern is, in short, at the same time a thing, which happens in
+the world, and the rule which tells us how to create that thing, and
+when we must create it. It is both a process and a thing; both a
+description of a thing which is alive, and a description of the
+process which will generate that thing.
+\end{quote}
+
+Several years later, this idea of patterns was introduced to the
+software development domain by \citet{patterns:beck} for presenting a
+new programming language. This eventually led to one of the most
+important publications for software development, \textit{Design
+  Patterns: Elements of Reusable Object-Oriented Software} from
+\citet{patterns:gamma}. \citet{timeless:gabriel} gave a
+software-specific definition, though still closely resemble to the
+original one:
+\begin{quote}
+Each pattern is a three-part rule, which expresses a relation between
+a certain context, a certain system of forces which occurs repeatedly
+in that context, and a certain software configuration which allows
+these forces to resolve themselves.
+\end{quote}
+
+\subsection{Comparison}
+[FIXME: add diagram.]
+
+\subsection{Of User Experience}
 Analogously, patterns of user experience---a language for describing
 user experiences with structured information
 \citep{pux:blackwell}---is the crucial factor for the success of
 bringing better user experience to the users. This is what
-practitioners like software engineers want, instead of the exact
+practitioners like software developers want, instead of the exact
 definitions and statements of user experience.
 
 Interestingly, the traditional software patterns can also be
 considered as patterns of user experience. But they are referring to
-user experience for the \textit{software engineers}, i.e.\ software
-engineers will have better experience with the source code if they
+user experience for the \textit{software developers}, i.e.\ software
+developers will have better experience with the source code if they
 choose to implement appropriate software patterns into their
 design. For example, following a well known software pattern can
 increase the maintainability of the source code. Notice that this also
 reflects an early, albeit still existing, common misconception of
-software engineers \citep{pux:blackwell}. They often focus too much
+software developers \citep{pux:blackwell}. They often focus too much
 attention on engineering the user interface and emphasizing the
 technical details that, instead as supporting tools, these user
 interface and technical details become the final product for the
@@ -254,7 +295,7 @@ the flow of experience\footnote{Refers to the mental state of
   involvement in the process of an activity.}.
 
 
-% Form pattern and guidelines for software engineer, with respect to
+% Form pattern and guidelines for software developer, with respect to
 % interface transparency.
 [Elaborated paragraphs explaining interface transparency as my second
   research interest.]
@@ -337,14 +378,14 @@ bedroom, while without causing any mess or damage.
 \label{sec:ux}
 [FIXME]
 
-When junior software engineers are given the task of designing a new
+When junior software developers are given the task of designing a new
 product or system\footnote{In the following text, ``product'' is used
   as a general term to refer to a product, system, service, or
   non-commercial item, unless explicitly specified otherwise.}, most
 of the time, they tend to squeeze as many features as possible into
 whatever they are suppose to design. The interfaces between the user
 and the design are scattered all over. This can often be observed in
-corporates where a junior software engineer is assigned to develop an
+corporates where a junior software developer is assigned to develop an
 internal tool to facilitate an existing working process
 (Figure~\ref{fig:featureful}.)  Though the design is practical, it is
 not very useful and the usage is limited to only a small selected
@@ -357,25 +398,25 @@ group of users.
 \label{fig:featureful}
 \end{figure}
 
-Software engineers have weird sense of excitement when they acquire
+Software developers have weird sense of excitement when they acquire
 new technologies and are often very eager to try them out. Lack of
-proper testing platform, many software engineers simply test the newly
+proper testing platform, many software developers simply test the newly
 acquired technology on whatever task they have at hand. Since efforts
 and time are already spent on making the new technology functional and
 it also provides a ``cool'' new feature to the original product, the
 test is not removed afterward but instead becomes part of the product.
 
 This is indicated by Alan Cooper \citeyearpar{inmates:cooper} that
-although software engineers work hard to make their software easy to
+although software developers work hard to make their software easy to
 use, their frame of reference is themselves and as a result they make
-it easy for other software engineers, instead of typical end-users. He
+it easy for other software developers, instead of typical end-users. He
 explains that since having too much influence over the design of the
 human interface and the lack of skills in this area, software
-engineers do a poor job of it.
+developers do a poor job of it.
 
 \subsection{Usability and Interface Transparency}
 % TODO: talk about user-centered design and usability
-This phenomenon will last until the software engineers are introduced
+This phenomenon will last until the software developers are introduced
 to the concept of usability. Dated back since the 1980s, this concept
 was introduced by the published studies and analysis papers from a
 dedicated group of mostly psychologists and human factors researchers
@@ -387,12 +428,12 @@ attention to the needs and limitations of the users.
 
 In this user-oriented development, contrast to the previous
 technology-oriented or feature-oriented development, software
-engineers work with experts from various specific fields---and most
+developers work with experts from various specific fields---and most
 importantly, also collaborate closely with the actual users---to bring
 efficient, easy-to-learn, easy-to-memorize, and non-disruptive product
 to the user. They form psychology and physiology models of the user to
 anticipate their needs and limitations. And from that model, the
-software engineers can build the product that would perfectly fit the
+software developers can build the product that would perfectly fit the
 users.
 
 % Bring up transparency, disrupt
