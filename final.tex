@@ -196,14 +196,16 @@ in that context, and a certain software configuration which allows
 these forces to resolve themselves.
 \end{quote}
 
-\subsection{Comparison}
+\subsection{Patterns and Others}
 There are quite a few other standards besides patterns which can also
 help software developers on improving the quality of the software. We
 already mentioned examples and guidelines above. Others include, but
 not limited to, principles, frameworks, and algorithms / data
-structure. In figure \ref{fig:standards}, we classified them depending
-on how specialized they are to the problems and how concrete of the
-solutions they are providing.
+structure. Some terms may have clashing definitions from the
+human-computer interaction field, so it is a good idea we examine them
+here. In figure \ref{fig:standards}, we classified them depending on
+how specialized they are to the problems and how concrete of the
+solutions they are offering.
 
 \begin{figure}[!t]
 \centering
@@ -211,6 +213,55 @@ solutions they are providing.
 \caption{Taxonomy of software development standards.}
 \label{fig:standards}
 \end{figure}
+
+\textit{Patterns} are split into three kinds in figure
+\ref{fig:standards}. The differences between the three are in their
+corresponding levels of abstraction and details. \textit{Architectural
+  patterns} involves with high-level components and mechanisms of the
+software. They also have wider affect on the overall software
+design. \textit{Design Patterns} are more related to medium-level
+subsystems within the software and have no influence on the overall
+design. \textit{Idioms} are paradigm-specific programming language
+techniques for low-level components \citep{patterns:buschmann}.
+
+\textit{Principles} do not describe the solutions to the encountered
+problems and are more abstract than patterns
+\citep{patterns:coplien}. However, principles frequently become the
+force and/or rationale of a patterns \citep{patterns:appleton}.
+
+\textit{Guidelines} are also very visible in the software development
+domain. Almost every programming language has its own programming
+style guidelines, which suggest to the software developers the style
+on how the source code should be organized, how variables should be
+names, etc. Similarly, almost every major operating system has its own
+human interface guidelines, which give recommendations to the software
+developers on improving the usability of the end-users. However,
+guidelines do not emphasize on the problem nor on the process of
+developing and using the guidelines. Guidelines normally just give
+imperative directions to the software developers and only apply to
+specific product or system \citep{patterns:griffiths}.
+
+\textit{Frameworks} are also closely related to patterns. Frameworks
+typically encompass several patterns, or implementations of a system
+of patterns. However, frameworks are more concrete than patterns in
+the sense that they can be embodied in code and can be reused
+directly. They are executable software, whereas patterns are knowledge
+and experience about software. Also frameworks always have a specific
+application domain, while patterns are applicable to nearly any kind
+of application \citep{patterns:gamma}.
+
+\textit{Algorithms / data structures} generally solve more
+fine-grained computational problems or deal with resource
+optimizations. Patterns on the other hand deal with architectural
+issues \citep{patterns:appleton}.
+
+\textit{Examples} are perhaps the most effective and direct among all
+the above. Almost all software developers learn new programming
+language or new techniques through examples. One classic example is
+the ``Hello World'' program \citep{c:kernighan}. With good examples,
+great software developers can induce the logic and standards behind
+them. However, great software developers rarely exist. Hence patterns
+and others are still required.
 
 \subsection{Of User Experience}
 Analogously, patterns of user experience---a language for describing
