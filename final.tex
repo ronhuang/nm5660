@@ -40,6 +40,7 @@
 
 
 \section{Introduction}
+\label{sec:introduction}
 The notion of user experience has been wildly adopted in the field of
 human-computer interaction. However, as many existing literature
 pointed out already \citep{ux:hassenzahl, ux:law}, a common agreement
@@ -92,20 +93,22 @@ the \textit{user experience} of human-computer interaction, we need
 effective measures for software developers to implement it into their
 product.
 
-In the following sections, we will explain why patterns of user
-experience are an effective measure to improve user experience and
-also the particular subject (interface transparency) in user
-experience we are interested in (section \ref{sec:pux}). Then we will
-cover a review on the various researches that led to the current state
-of user experience and interface transparency (section
-\ref{sec:ux}). Next, a proposal for experiments will be given to
-explore the possible patterns of user experience (section
-\ref{sec:experiment}). Finally, the conclusion (section
-\ref{sec:conclusion}).
+In the following sections, we will first go through the related works
+to our study (section \ref{sec:related}). Afterward, we will explain
+what patterns are from the perspective of software development
+(section \ref{sec:pattern}). Then we will cover a review on the
+various researches that led to the current state of user experience
+and interface transparency (section \ref{sec:ux}). Next, we will
+discuss about patterns of user experience and how they are beneficial
+to the software development domain, with particular interests in
+interface transparency (section \ref{sec:pux}). We will also propose
+experiments to collect patterns in this perspective (section
+\ref{sec:experiment}). Finally, the conclusion and future works
+(section \ref{sec:conclusion}).
 
 
 \section{Related Works}
-\label{sec:relatedworks}
+\label{sec:related}
 % TODO: mention Universal usability
 [FIXME]
 
@@ -120,8 +123,8 @@ to participate in the product design.
 \citet{unix:raymond}
 
 
-\section{Patterns of User Experience}
-\label{sec:pux}
+\section{Patterns}
+\label{sec:pattern}
 Software developers, like engineers in the other engineering
 disciplines, rely on standards---codified and enforced from good
 practices---to improve the quality and lower the cost of software
@@ -145,7 +148,7 @@ mediocre ones \citep{rockstar:iskold}. But what are patterns?
 
 [FIXME: more on benefit of patterns?]
 
-\subsection{Patterns}
+\subsection{Definitions}
 The term ``pattern'' originated from \citet{timeless:alexander}, where
 the author was looking for structures of urban planning and building
 architecture that have positive influence on people by improving their
@@ -196,7 +199,7 @@ in that context, and a certain software configuration which allows
 these forces to resolve themselves.
 \end{quote}
 
-\subsection{Patterns and Others}
+\subsection{Comparison with Others}
 There are quite a few other standards besides patterns which can also
 help software developers on improving the quality of the software. We
 already mentioned examples and guidelines above. Others include, but
@@ -262,191 +265,6 @@ the ``Hello World'' program \citep{c:kernighan}. With good examples,
 great software developers can induce the logic and standards behind
 them. However, great software developers rarely exist. Hence patterns
 and others are still required.
-
-\subsection{Of User Experience}
-Analogously, patterns of user experience---a language for describing
-user experiences with structured information
-\citep{pux:blackwell}---is the crucial factor for the success of
-bringing better user experience to the users. This is what
-practitioners like software developers want, instead of the exact
-definitions and statements of user experience.
-
-Interestingly, the traditional software patterns can also be
-considered as patterns of user experience. But they are referring to
-user experience for the \textit{software developers}, i.e.\ software
-developers will have better experience with the source code if they
-choose to implement appropriate software patterns into their
-design. For example, following a well known software pattern can
-increase the maintainability of the source code. Notice that this also
-reflects an early, albeit still existing, common misconception of
-software developers \citep{pux:blackwell}. They often focus too much
-attention on engineering the user interface and emphasizing the
-technical details that, instead as supporting tools, these user
-interface and technical details become the final product for the
-users.
-
-\subsection{Examples}
-However the user experience we are mentioning here is the user
-experience for the \textit{users}, the actual users who will be using
-the software. By implementing these patterns of user experience into
-the design, the users can gain better user experience with the
-product. Table~\ref{tab:shield} gives a simple example on patterns of
-user experience for error management \citep{patterns:welie}.
-
-\begin{table}[!t]
-  \caption{Pattern of user experience `The Shield'.}
-  \label{tab:shield}
-  \begin{center}
-    \begin{tabular}{| p{0.2\columnwidth} || p{0.7\columnwidth} |}
-      \hline
-      Name & The Shield. \\ \hline
-
-      Problem & The user may accidentally select a function that has
-      irreversible (side) effects. \\ \hline
-
-      Usability Principle & Error management. \\ \hline
-
-      Context & The user needs to be protected against unintended or
-      accidental actions that have irreversible (side) effects. The
-      (side) effects may lead to unsafe or highly undesired
-      situations. For example the unintended deletion or overwriting
-      of files. Do not use for actions that are reversible. \\ \hline
-
-      Forces & The user is striving for speed while trying to avoid
-      mistakes. \\ \hline
-
-      Solutions & Protect the user by inserting a shield. \\ \hline
-
-      Usability Impact & Increased safety, less errors and higher
-      satisfaction. However, it requires extra user action which leads
-      to lower performance time. \\ \hline
-
-      Rationale & The extra layer causes the user to require 2
-      repetitive mistakes instead of 1. The safe default decreases the
-      chances for a second mistake. \\ \hline
-
-      Known uses & Microsoft Explorer, Apple Finder. \\ \hline
-    \end{tabular}
-  \end{center}
-\end{table}
-
-\subsection{For Interface Transparency}
-% * Different meanings of interface transparency.
-% * Brief mentioning of interface transparency in the history of
-%   human-computer interaction.
-
-Though there are quite a few existing publications discussing patterns
-of user experience in various aspects of human-computer interaction
-(refer to section \ref{sec:relatedworks}), we will focus our attention
-on investigating the patterns of user experience for interface
-transparency.
-
-Interface transparency often have different meanings when presented to
-diverse set of audiences. For expert system, interface transparency is
-important for gaining trust to the users [FIXME].
-
-Similarly, for Unix power users following the Unix philosophy,
-interface transparency might suggest that the software is capable of
-churning out excessive amount of messages when error occurred. These
-power users are able to interpret the messages and partially `replay'
-the flow of control\footnote{Refers to the order in which the
-  individual statements or instructions of a program are executed or
-  evaluated.}  for the software. The software at fault is not a
-completely opaque black box to them with the help of the
-messages. They can sort of see through the software and figure out the
-problem hiding underneath \citep{unix:raymond}.
-
-On the other hand, typical end-users do not usually consider excessive
-messages as interface transparency. A common action when typical
-end-users encounter unexpected information: they try to get rid of it
-as soon as possible \citep{oldnew:chen}. To them, the information are
-regarded as either gibberish or elaborated way of describing something
-dangerous. This is because the information is unforeseen and cannot
-fit into the conceptual model which they had previously formed for the
-software. Hence, instead of being treated as interface transparency,
-the excessive messages are more like an unknown dark spot occluding
-the flow of experience\footnote{Refers to the mental state of
-  operation in which a person is fully immersed in a feeling of full
-  involvement in the process of an activity.}.
-
-
-% Form pattern and guidelines for software developer, with respect to
-% interface transparency.
-[Elaborated paragraphs explaining interface transparency as my second
-  research interest.]
-
-Added to this, the emergence of the user experience is an attempt to
-inform design and evaluation has been widespread in HCI. Such that,
-researchers are proposing user experience encapsulating the idea of
-interface transparency.
-
-Hence, the relationship between transparency and user
-experience will also be examined.
-
-\subsection{Research Goal}
-[Elaborated paragraphs combining patterns of user experience and
-  interface transparency as my research goal.]
-
-% problem I am trying to solve
-With all this being said, this article is not another attempt to
-develop a common view on user experience. Numerous literature,
-conferences, and workshops have already attempted to address this
-topic, such as \citet{early:forlizzi}, \citet{emotional:norman},
-\citet{action:dourish}, \citet{ux:hassenzahl},
-\citet{experience:desmet}, and \citet{ux:law}.
-
-For sake of completeness, some view points on user experience will
-still be discussed in the following section. However, the main
-research goal for this article is to further explore interface
-transparency within the field of user experience. Interface
-transparency is still a crucial factor in this field, even though user
-experience has been the prominent subject in recent years. In his
-article, \citet{future:memmel} suggests that usability engineering and
-interaction design will be the more concrete premises and disciplines
-below the umbrella term of user experience. This argument is similar
-to the one from \citet{windows:bolter} that transparency is only half
-the story---each digital design should move back and forth between
-being transparent and being reflective.
-
-Transparent and reflective, two contrasting albeit interesting point
-of views prompted people to think about whether they have been too
-obsessed with achieving interface transparency, the benefits and
-limitations of interface transparency, measuring interface
-transparency. Added to this, the emergence of the user experience is
-an attempt to inform design and evaluation has been widespread in
-HCI. Such that, researchers are proposing user experience
-encapsulating the idea of transparency. Hence, the relationship
-between transparency and user experience will also be examined.
-
-% Talk about the experiment.
-\subsection{Experiment}
-[FIXME]
-
-A new human interface device and application will be developed to
-investigate interface transparency within user experience. This new
-device will provide similar functionality to the multi-touch touchpad
-that comes with recent laptops. However, the device will enable the
-users to perform the usual tasks of multi-touch touchpad on any
-surface, as if the physical touchpad is underneath their hand. The
-development of this new device is actually based upon our previous
-study \citep{lmnt:huang}, where the first-generation prototype was
-built and some preliminary studies were conducted. Much of the
-feedback from the first-generation prototype are taken into
-consideration when designing the new device for this study.
-
-% Application based on Baba Painter.
-An application will be developed to accompany the new human interface
-device. This application will too be an extension to our other
-previous study, an interactive painting and collaboration reviewing
-system \citep{baba:abeyrathne}. However, since the instrument will be
-replaced by the new device developed in this study, the scenario and
-the users will be adjusted accordingly. We planed to target the
-application to kids. The application will allow small children to
-scribble intuitively on any surface and be creative wherever they are,
-whether on the dining table of a restaurant or on the wall in the
-bedroom, while without causing any mess or damage.
-
-% User, product, context
 
 
 \section{User Experience}
@@ -608,7 +426,194 @@ experience \citep{definition:law}.
 % Talk about Linux and Windows as example for transparency.
 
 
-\section{Planned Experiment}
+\section{Patterns Of User Experience}
+\label{sec:pux}
+Analogously, patterns of user experience---a language for describing
+user experiences with structured information
+\citep{pux:blackwell}---is the crucial factor for the success of
+bringing better user experience to the users. This is what
+practitioners like software developers want, instead of the exact
+definitions and statements of user experience.
+
+Interestingly, the traditional software patterns can also be
+considered as patterns of user experience. But they are referring to
+user experience for the \textit{software developers}, i.e.\ software
+developers will have better experience with the source code if they
+choose to implement appropriate software patterns into their
+design. For example, following a well known software pattern can
+increase the maintainability of the source code. Notice that this also
+reflects an early, albeit still existing, common misconception of
+software developers \citep{pux:blackwell}. They often focus too much
+attention on engineering the user interface and emphasizing the
+technical details that, instead as supporting tools, these user
+interface and technical details become the final product for the
+users.
+
+\subsection{Examples}
+However the user experience we are mentioning here is the user
+experience for the \textit{users}, the actual users who will be using
+the software. By implementing these patterns of user experience into
+the design, the users can gain better user experience with the
+product. Table~\ref{tab:shield} gives a simple example on patterns of
+user experience for error management \citep{patterns:welie}.
+
+\begin{table}[!t]
+  \caption{Pattern of user experience `The Shield'.}
+  \label{tab:shield}
+  \begin{center}
+    \begin{tabular}{| p{0.2\columnwidth} || p{0.7\columnwidth} |}
+      \hline
+      Name & The Shield. \\ \hline
+
+      Problem & The user may accidentally select a function that has
+      irreversible (side) effects. \\ \hline
+
+      Usability Principle & Error management. \\ \hline
+
+      Context & The user needs to be protected against unintended or
+      accidental actions that have irreversible (side) effects. The
+      (side) effects may lead to unsafe or highly undesired
+      situations. For example the unintended deletion or overwriting
+      of files. Do not use for actions that are reversible. \\ \hline
+
+      Forces & The user is striving for speed while trying to avoid
+      mistakes. \\ \hline
+
+      Solutions & Protect the user by inserting a shield. \\ \hline
+
+      Usability Impact & Increased safety, less errors and higher
+      satisfaction. However, it requires extra user action which leads
+      to lower performance time. \\ \hline
+
+      Rationale & The extra layer causes the user to require 2
+      repetitive mistakes instead of 1. The safe default decreases the
+      chances for a second mistake. \\ \hline
+
+      Known uses & Microsoft Explorer, Apple Finder. \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\subsection{For Interface Transparency}
+% * Different meanings of interface transparency.
+% * Brief mentioning of interface transparency in the history of
+%   human-computer interaction.
+
+Though there are quite a few existing publications discussing patterns
+of user experience in various aspects of human-computer interaction
+(refer to section \ref{sec:related}), we will focus our attention on
+investigating the patterns of user experience for interface
+transparency.
+
+Interface transparency often have different meanings when presented to
+diverse set of audiences. For expert system, interface transparency is
+important for gaining trust to the users [FIXME].
+
+Similarly, for Unix power users following the Unix philosophy,
+interface transparency might suggest that the software is capable of
+churning out excessive amount of messages when error occurred. These
+power users are able to interpret the messages and partially `replay'
+the flow of control\footnote{Refers to the order in which the
+  individual statements or instructions of a program are executed or
+  evaluated.}  for the software. The software at fault is not a
+completely opaque black box to them with the help of the
+messages. They can sort of see through the software and figure out the
+problem hiding underneath \citep{unix:raymond}.
+
+On the other hand, typical end-users do not usually consider excessive
+messages as interface transparency. A common action when typical
+end-users encounter unexpected information: they try to get rid of it
+as soon as possible \citep{oldnew:chen}. To them, the information are
+regarded as either gibberish or elaborated way of describing something
+dangerous. This is because the information is unforeseen and cannot
+fit into the conceptual model which they had previously formed for the
+software. Hence, instead of being treated as interface transparency,
+the excessive messages are more like an unknown dark spot occluding
+the flow of experience\footnote{Refers to the mental state of
+  operation in which a person is fully immersed in a feeling of full
+  involvement in the process of an activity.}.
+
+
+% Form pattern and guidelines for software developer, with respect to
+% interface transparency.
+[Elaborated paragraphs explaining interface transparency as my second
+  research interest.]
+
+Added to this, the emergence of the user experience is an attempt to
+inform design and evaluation has been widespread in HCI. Such that,
+researchers are proposing user experience encapsulating the idea of
+interface transparency.
+
+Hence, the relationship between transparency and user
+experience will also be examined.
+
+\subsection{Research Goal}
+[Elaborated paragraphs combining patterns of user experience and
+  interface transparency as my research goal.]
+
+% problem I am trying to solve
+With all this being said, this article is not another attempt to
+develop a common view on user experience. Numerous literature,
+conferences, and workshops have already attempted to address this
+topic, such as \citet{early:forlizzi}, \citet{emotional:norman},
+\citet{action:dourish}, \citet{ux:hassenzahl},
+\citet{experience:desmet}, and \citet{ux:law}.
+
+For sake of completeness, some view points on user experience will
+still be discussed in the following section. However, the main
+research goal for this article is to further explore interface
+transparency within the field of user experience. Interface
+transparency is still a crucial factor in this field, even though user
+experience has been the prominent subject in recent years. In his
+article, \citet{future:memmel} suggests that usability engineering and
+interaction design will be the more concrete premises and disciplines
+below the umbrella term of user experience. This argument is similar
+to the one from \citet{windows:bolter} that transparency is only half
+the story---each digital design should move back and forth between
+being transparent and being reflective.
+
+Transparent and reflective, two contrasting albeit interesting point
+of views prompted people to think about whether they have been too
+obsessed with achieving interface transparency, the benefits and
+limitations of interface transparency, measuring interface
+transparency. Added to this, the emergence of the user experience is
+an attempt to inform design and evaluation has been widespread in
+HCI. Such that, researchers are proposing user experience
+encapsulating the idea of transparency. Hence, the relationship
+between transparency and user experience will also be examined.
+
+% Talk about the experiment.
+\subsection{Experiment}
+[FIXME]
+
+A new human interface device and application will be developed to
+investigate interface transparency within user experience. This new
+device will provide similar functionality to the multi-touch touchpad
+that comes with recent laptops. However, the device will enable the
+users to perform the usual tasks of multi-touch touchpad on any
+surface, as if the physical touchpad is underneath their hand. The
+development of this new device is actually based upon our previous
+study \citep{lmnt:huang}, where the first-generation prototype was
+built and some preliminary studies were conducted. Much of the
+feedback from the first-generation prototype are taken into
+consideration when designing the new device for this study.
+
+% Application based on Baba Painter.
+An application will be developed to accompany the new human interface
+device. This application will too be an extension to our other
+previous study, an interactive painting and collaboration reviewing
+system \citep{baba:abeyrathne}. However, since the instrument will be
+replaced by the new device developed in this study, the scenario and
+the users will be adjusted accordingly. We planed to target the
+application to kids. The application will allow small children to
+scribble intuitively on any surface and be creative wherever they are,
+whether on the dining table of a restaurant or on the wall in the
+bedroom, while without causing any mess or damage.
+
+% User, product, context
+
+
+\section{Planned Experiments}
 \label{sec:experiment}
 [FIXME]
 
