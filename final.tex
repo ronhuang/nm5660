@@ -147,8 +147,6 @@ software patterns is so influential that it is often regarded as an
 indication to distinguishing rockstar software developers from
 mediocre ones \citep{rockstar:iskold}. But what are patterns?
 
-[FIXME: more on benefit of patterns?]
-
 \subsection{Definitions}
 The term ``pattern'' originated from \citet{timeless:alexander}, where
 the author was looking for structures of urban planning and building
@@ -428,6 +426,7 @@ typical end-users, instead of the currently yet clarified definitions
 and statements of user experience, and are also the one crucial factor
 for this to succeed.
 
+\subsection{For End-users}
 Interestingly, the traditional software patterns can also be
 considered as patterns of user experience. But they are referring to
 user experience for the \textit{software developers}, i.e.\ software
@@ -437,7 +436,7 @@ design. For example, following a well known software pattern can
 increase the maintainability of the source code among the
 collaborating software developers.
 
-However this intention for software patterns differs from the original
+But this intention for software patterns differs from the original
 intention traced back since architecture and urban planning
 \citep{timeless:alexander}. The original intention was to improve
 comfort and quality of life for the people living inside. But due to
@@ -447,24 +446,34 @@ when introduced to the software development domain. They often focus
 too much attention on engineering the user interface and emphasizing
 the technical details that, instead as supporting tools, these user
 interface and technical details become the final product for the users
-\citep{pux:blackwell}. That is why software patterns are applicable
-toward themselves.
+\citep{pux:blackwell}. That is why software patterns are more
+applicable toward software developers.
 
-Nevertheless, the patterns of user experience we are focusing here is
-the user experience for the \textit{users}, the actual users who will
-be using the software. By implementing these patterns of user
-experience into the design, the users can gain better user experience
-with the product. Table~\ref{tab:shield} gives a simple example on
-patterns of user experience for error management
-\citep{patterns:welie}.
+However, the user experience we are focusing here is the user
+experience for the \textit{end-users}, the actual users who will be
+using the software. Software developers are still the ones who have to
+implement the patterns of user experience. But it is the user
+experiences with the product of the end-users that are improved,
+instead of the user experiences with the source code of the software
+developers.
 
 \subsection{Examples}
-However the user experience we are mentioning here is the user
-experience for the \textit{users}, the actual users who will be using
-the software. By implementing these patterns of user experience into
-the design, the users can gain better user experience with the
-product. Table~\ref{tab:shield} gives a simple example on patterns of
-user experience for error management \citep{patterns:welie}.
+Table~\ref{tab:shield} gives a simple example on patterns of user
+experience for error management \citep{patterns:welie}. Coherent to
+the definition in section \ref{sec:pattern}, the pattern clearly
+specified the problem, the context, the forces, and the
+solutions. Some additional fields are also included to help people
+understanding the pattern better.
+
+For comparison, the following is a guideline on \textit{text} from
+\textit{Apple Human Interface Guidelines} \citep{hig:apple}. Contrast
+to patterns, it does not provide the ins and outs on how the solution
+was devised. And although it offers a direct solution, it is very
+specific to a particular problem.
+\begin{quote}
+The system font (Lucida Grande Regular 13 point) is used for text in
+menus, dialogs, and full-size controls.
+\end{quote}
 
 \begin{table}[!t]
   \caption{Pattern of user experience `The Shield'.}
