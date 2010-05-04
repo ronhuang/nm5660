@@ -9,6 +9,7 @@
 \usepackage{natbib}
 \usepackage{url}
 \usepackage{tikz}
+\usepackage{mdwlist} % compact list
 
 \hyphenation{trans-pa-ren-cy}
 
@@ -269,20 +270,21 @@ and others are still required.
 
 \section{User Experience}
 \label{sec:ux}
-[FIXME]
+In this section, we will move our attention to user experience. We
+will talk about its development from the early user interface designs
+to the more recent advancements. We will also discuss further on the
+topic of interface transparency.
 
+\subsection{Technology-oriented}
 When junior software developers are given the task of designing a new
-product or system\footnote{In the following text, ``product'' is used
-  as a general term to refer to a product, system, service, or
-  non-commercial item, unless explicitly specified otherwise.}, most
-of the time, they tend to squeeze as many features as possible into
-whatever they are suppose to design. The interfaces between the user
-and the design are scattered all over. This can often be observed in
-corporates where a junior software developer is assigned to develop an
-internal tool to facilitate an existing working process
-(Figure~\ref{fig:featureful}.)  Though the design is practical, it is
-not very useful and the usage is limited to only a small selected
-group of users.
+product or system, most of the time, they tend to squeeze as many
+features as possible into whatever they are suppose to design. The
+interfaces between the user and the design are scattered all
+over. This can often be observed in corporates where a junior software
+developer is assigned to develop an internal tool to facilitate an
+existing working process (Figure~\ref{fig:featureful}.)  Though the
+design is practical, it is not very useful and the usage is limited to
+only a small selected group of users.
 
 \begin{figure}[!t]
 \centering
@@ -291,25 +293,24 @@ group of users.
 \label{fig:featureful}
 \end{figure}
 
-Software developers have weird sense of excitement when they acquire
-new technologies and are often very eager to try them out. Lack of
-proper testing platform, many software developers simply test the newly
-acquired technology on whatever task they have at hand. Since efforts
-and time are already spent on making the new technology functional and
-it also provides a ``cool'' new feature to the original product, the
-test is not removed afterward but instead becomes part of the product.
+The above phenomenons were also observed in the early days of user
+interface designs. Many new technologies---such as window, icon, menu,
+and pointing device---had grasped the attentions of the software
+developers. They were very eager to try out these new technologies and
+often falsely believed that the implementation of these new
+technologies were the goal of successful software.
 
-This is indicated by Alan Cooper \citeyearpar{inmates:cooper} that
-although software developers work hard to make their software easy to
-use, their frame of reference is themselves and as a result they make
-it easy for other software developers, instead of typical end-users. He
-explains that since having too much influence over the design of the
-human interface and the lack of skills in this area, software
-developers do a poor job of it.
+This is indicated by \citet{inmates:cooper} that although software
+developers work hard to make their software easy to use, their frame
+of reference is themselves and as a result they make it easy for other
+software developers, instead of typical end-users. He explains that
+since having too much influence over the design of the human interface
+and the lack of skills in this area, software developers do a poor job
+of it.
 
 \subsection{Usability and Interface Transparency}
 % TODO: talk about user-centered design and usability
-This phenomenon will last until the software developers are introduced
+This situation will last until the software developers are introduced
 to the concept of usability. Dated back since the 1980s, this concept
 was introduced by the published studies and analysis papers from a
 dedicated group of mostly psychologists and human factors researchers
@@ -326,47 +327,52 @@ importantly, also collaborate closely with the actual users---to bring
 efficient, easy-to-learn, easy-to-memorize, and non-disruptive product
 to the user. They form psychology and physiology models of the user to
 anticipate their needs and limitations. And from that model, the
-software developers can build the product that would perfectly fit the
-users.
+software developers could build products that perfectly fit the users
+and not get in the way. Where the users can focus their attention on
+the tasks at hand as if the user interfaces do not exist or seem
+transparent \citep{computer:weiser}.
 
 % Bring up transparency, disrupt
-From their research, \citet{transparency:holtzblatt} show that
+This interface transparency is an indication of good user interface
+design. From their research, \citet{transparency:holtzblatt} show that
 elements of an application design can disrupt users' work. They
 observed that only when the users are not disrupted by the computer
 system will they remain in the flow of their work and experience
-interface transparency. This interface transparency is the ultimate
-goal for usability studies and is considered the ideal relationship
-between user and tool with the tool seeming to disappear by
+interface transparency. It is also one of the ultimate goals for
+usability studies and is considered the ideal relationship between
+user and tool with the tool seeming to disappear by
 \citet{transparency:rutkoski}.
 
 \subsection{Danger of Transparency}
 % danger of transparency
-However, the idea of striving for interface transparency is also
-challenged by others. \citet{windows:bolter} talked about the myth of
-transparency: \textit{The danger of transparency is that the interface
-  will mask the operation of the system exactly when the user needs to
-  see and understand what the system is doing}. As described by
-\citet{design:norman}, the designers and the users each have their own
-conceptual models or mental images of the product. Ideally, these two
-models should be identical for the users to understand and use the
-product properly. Unfortunately, this might not always be the case. So
-the users often have to form their own model exclusively from the
+However, the idea of striving for interface transparency is at the
+same time being challenged by others. \citet{windows:bolter} talked
+about the myth of transparency: \textit{The danger of transparency is
+  that the interface will mask the operation of the system exactly
+  when the user needs to see and understand what the system is
+  doing}. One reason for this danger comes from the fact that
+designers and the users each have their own conceptual models or
+mental images of the product. Ideally, these two models should be
+identical for the users to understand and use the product
+properly. Unfortunately, this might not always be the case. So the
+users often have to form their own model exclusively from the
 observation of the product, whether from the exterior guise, the
-feedback provided, the responses from blogger, documentations,
-etc. Therefore, if the product was invisible or transparent to the
-users, how could it act as a medium to help the users to understand
-itself? [FIXME: need more words.] Nor can it be engaging or
-communicative.
+feedback provided, the responses from blogger, documentations, etc
+\citet{design:norman}. But if the product was invisible or transparent
+to the users, how could it act as a medium to help the users to
+understand itself? Interface transparency eliminates the communicative
+aspect of the user interfaces, along with others such as the engaging
+aspect.
 
 % other direction: user experience
 % difficulty of user experience
-The community of human-computer interaction quickly embraced the
-idea that solely pursuing for interface transparency and performance
-is not enough, and a richer model is required to encapsulate the other
-perspectives of the interaction, which fall under the umbrella term of
-user experience. This may include addressing the human needs beyond
-the instrumental; stressing affective and emotional aspects of the
-interaction; and dealing with the nature of experience
+The community of human-computer interaction quickly embraced the idea
+that solely pursuing for interface transparency and performance is not
+enough, and a richer model is required to encapsulate the other
+perspectives of the user interaction. These all fall under the
+umbrella term of user experience, which may include: addressing the
+human needs beyond the instrumental; stressing affective and emotional
+aspects of the interaction; and dealing with the nature of experience
 \citep{ux:hassenzahl}. Many models have been proposed, however the
 universal definition for user experience is still not well understood
 nor fully clarified. There are several reasons why this is so,
@@ -386,44 +392,28 @@ according to \citet{ux:law} for example:
 \end{enumerate}
 
 \subsection{Definitions}
-Table \ref{tab:definitions} has some sample definitions of user
-experience \citep{definition:law}.
+Some definitions of user experience are given here to illustrate its
+diversity.
+\begin{description*}
+  \item[\citet{experience:alben}] \hfill \\
+    All the aspects of how people use an interactive product: the way
+    it feels in their hands, how well they understand how it works,
+    how they feel about it while they're using it, how well it serves
+    their purposes, and how well it fits into the entire context in
+    which they are using it.
 
-\begin{table}[!t]
-  \caption{Various definitions of User Experience.}
-  \label{tab:definitions}
-  \begin{center}
-    \begin{tabular}{| p{0.2\columnwidth} || p{0.7\columnwidth} |}
-      \hline
+  \item[\citet{experience:nielsen}] \hfill \\
+    All aspects of the end-user's interaction with the company, its
+    services, and its product.
 
-      Lauralee Alben: & All the aspects of how people use an
-      interactive product: the way it feels in their hands, how well
-      they understand how it works, how they feel about it while
-      they're using it, how well it serves their purposes, and how
-      well it fits into the entire context in which they are using
-      it. \\ \hline
-
-      Nielsen Norman Group: & All aspects of the end-user's
-      interaction with the company, its services, and its
-      product. \\ \hline
-
-      Marc Hassenzahl \& Noam Tractinsky: & A consequence of a user's
-      internal state (predispositions, expectations, needs,
-      motivation, mood, etc.), the characteristics of the designed
-      system (e.g. complexity, purpose, usability, functionality,
-      etc.) and the context (or the environment) within which the
-      interaction occurs (e.g. organizational/social setting,
-      meaningfulness of the activity, voluntariness of use, etc.)
-      \\ \hline
-    \end{tabular}
-  \end{center}
-\end{table}
-
-\subsection{Interface Transparency}
-[FIXME]
-% Talk about various other non interface transparency.
-
-% Talk about Linux and Windows as example for transparency.
+  \item[\citet{ux:hassenzahl}] \hfill \\
+    A consequence of a user's internal state (predispositions,
+    expectations, needs, motivation, mood, etc.), the characteristics
+    of the designed system (e.g. complexity, purpose, usability,
+    functionality, etc.) and the context (or the environment) within
+    which the interaction occurs (e.g. organizational/social setting,
+    meaningfulness of the activity, voluntariness of use, etc.)
+\end{description*}
 
 
 \section{Patterns Of User Experience}
@@ -495,6 +485,9 @@ user experience for error management \citep{patterns:welie}.
 \end{table}
 
 \subsection{For Interface Transparency}
+% Talk about various other non interface transparency.
+% Talk about Linux and Windows as example for transparency.
+
 % * Different meanings of interface transparency.
 % * Brief mentioning of interface transparency in the history of
 %   human-computer interaction.
@@ -546,6 +539,11 @@ interface transparency.
 
 Hence, the relationship between transparency and user
 experience will also be examined.
+
+
+\section{Planned Experiments}
+\label{sec:experiment}
+[FIXME]
 
 \subsection{Research Goal}
 [Elaborated paragraphs combining patterns of user experience and
@@ -611,11 +609,6 @@ whether on the dining table of a restaurant or on the wall in the
 bedroom, while without causing any mess or damage.
 
 % User, product, context
-
-
-\section{Planned Experiments}
-\label{sec:experiment}
-[FIXME]
 
 
 \section{Conclusion}
