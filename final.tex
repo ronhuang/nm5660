@@ -9,7 +9,6 @@
 \usepackage{natbib}
 \usepackage{url}
 \usepackage{tikz}
-\usepackage{mdwlist} % compact list
 
 \hyphenation{trans-pa-ren-cy}
 
@@ -182,21 +181,19 @@ important publications in software development, \textit{Design
 
 Though many have given their own definitions of patterns from the
 software perspective, most of them still closely resemble to the
-original definition from Alexander. For example,
-\citet{patterns:appleton} provided:
-\begin{quote}
-A pattern is a named nugget of instructive information that captures
-the essential structure and insight of a successful family of proven
-solutions to a recurring problem that arises within a certain context
-and system of forces.
-\end{quote}
-And \citet{timeless:gabriel} provided:
-\begin{quote}
-Each pattern is a three-part rule, which expresses a relation between
-a certain context, a certain system of forces which occurs repeatedly
-in that context, and a certain software configuration which allows
-these forces to resolve themselves.
-\end{quote}
+original definition from Alexander. For example:
+\begin{description}
+  \item[\citet{patterns:appleton}] \hfill \\
+    A pattern is a named nugget of instructive information that
+    captures the essential structure and insight of a successful
+    family of proven solutions to a recurring problem that arises
+    within a certain context and system of forces.
+  \item[\citet{timeless:gabriel}] \hfill \\
+    Each pattern is a three-part rule, which expresses a relation
+    between a certain context, a certain system of forces which occurs
+    repeatedly in that context, and a certain software configuration
+    which allows these forces to resolve themselves.
+\end{description}
 
 \subsection{Comparison with Others}
 There are quite a few other standards besides patterns which can also
@@ -390,8 +387,8 @@ according to \citet{ux:law} for example:
 
 \subsection{Definitions}
 Some definitions of user experience are given here to illustrate its
-diversity.
-\begin{description*}
+diversity:
+\begin{description}
   \item[\citet{experience:alben}] \hfill \\
     All the aspects of how people use an interactive product: the way
     it feels in their hands, how well they understand how it works,
@@ -410,7 +407,7 @@ diversity.
     functionality, etc.) and the context (or the environment) within
     which the interaction occurs (e.g. organizational/social setting,
     meaningfulness of the activity, voluntariness of use, etc.)
-\end{description*}
+\end{description}
 
 
 \section{Patterns Of User Experience}
@@ -465,15 +462,13 @@ specified the problem, the context, the forces, and the
 solutions. Some additional fields are also included to help people
 understanding the pattern better.
 
-For comparison, the following is a guideline on \textit{text} from
-\textit{Apple Human Interface Guidelines} \citep{hig:apple}. Contrast
-to patterns, it does not provide the ins and outs on how the solution
-was devised. And although it offers a direct solution, it is very
-specific to a particular problem.
-\begin{quote}
-The system font (Lucida Grande Regular 13 point) is used for text in
-menus, dialogs, and full-size controls.
-\end{quote}
+For comparison, the following is a user interface guideline on how
+text should be formatted: \textit{The \textbf{system font} (Lucida
+  Grande Regular 13 point) is used for text in menus, dialogs, and
+  full-size controls} \citep{hig:apple}. Contrast to patterns, it does
+not provide the ins and outs on how the solution was devised. And
+although it offers a direct solution, it is very specific to a
+particular problem.
 
 \begin{table}[!t]
   \caption{Pattern of user experience `The Shield'.}
@@ -519,6 +514,7 @@ menus, dialogs, and full-size controls.
 % * Different meanings of interface transparency.
 % * Brief mentioning of interface transparency in the history of
 %   human-computer interaction.
+[FIXME]
 
 Though there are quite a few existing publications discussing patterns
 of user experience in various aspects of human-computer interaction
