@@ -195,14 +195,15 @@ original definition from Alexander. For example:
 
 \subsection{Comparison with Others}
 There are quite a few other standards besides patterns which can also
-help software developers on improving the quality of the software. We
-already mentioned examples and guidelines above. Others include, but
-not limited to, principles, frameworks, and algorithms / data
+help software developers on improving the quality of the software. For
+example as mentioned above, guidelines and examples. Others include,
+but not limited to, principles, frameworks, and algorithms / data
 structure. Some terms may have clashing definitions from the
 human-computer interaction field, so it is a good idea we examine them
-here. In figure \ref{fig:standards}, we classified them depending on
-how specialized they are to the problems and how concrete of the
-solutions they are offering.
+here. In this article, we propose the following classification for
+these standards based on how specialized they are to the problems and
+how concrete of the solutions they are offering (Figure
+\ref{fig:standards}).
 
 \begin{figure}[!t]
 \centering
@@ -230,13 +231,13 @@ force and/or rationale of a patterns \citep{patterns:appleton}.
 domain. Almost every programming language has its own programming
 style guidelines, which suggest to the software developers the style
 on how the source code should be organized, how variables should be
-names, etc. Similarly, almost every major operating system has its own
+name, etc. Similarly, almost every major operating system has its own
 human interface guidelines, which give recommendations to the software
 developers on improving the usability of the end-users. However,
-guidelines do not emphasize on the problem nor on the process of
-developing and using the guidelines. Guidelines normally just give
-imperative directions to the software developers and only apply to
-specific product or system \citep{patterns:griffiths}.
+guidelines largely do not emphasize on the problem nor on the process
+of developing and using the guidelines. Guidelines normally just give
+``imperative'' directions to the software developers and only apply to
+a specific product or system \citep{patterns:griffiths}.
 
 \textit{Frameworks} are also closely related to patterns. Frameworks
 typically encompass several patterns, or implementations of a system
@@ -249,16 +250,17 @@ of application \citep{patterns:gamma}.
 
 \textit{Algorithms / data structures} generally solve more
 fine-grained computational problems or deal with resource
-optimizations. Patterns on the other hand deal with architectural
-issues \citep{patterns:appleton}.
+optimizations. Patterns on the other hand deal with software
+architectural issues \citep{patterns:appleton}.
 
 \textit{Examples} are perhaps the most effective and direct among all
 the above. Almost all software developers learn new programming
-language or new techniques through examples. One classic example is
-the ``Hello World'' program \citep{c:kernighan}. With good examples,
-great software developers can induce the logic and standards behind
-them. However, great software developers rarely exist. Hence patterns
-and others are still required.
+languages or new techniques through examples. One classic example is
+the ``Hello World'' program \citep{c:kernighan}, which demonstrates a
+simple way of displaying the text ``Hello World'' with a specific
+programming language. However examples are also the most restrictive,
+providing very precised solutions to specific settings, and the most
+concrete, providing mainly source code, of all standards.
 
 
 \section{User Experience}
@@ -275,16 +277,9 @@ features as possible into whatever they are suppose to design. The
 interfaces between the user and the design are scattered all
 over. This can often be observed in corporates where a junior software
 developer is assigned to develop an internal tool to facilitate an
-existing working process (Figure~\ref{fig:featureful}.)  Though the
-design is practical, it is not very useful and the usage is limited to
-only a small selected group of users.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=.7\columnwidth]{featureful}
-\caption{Internal tool for parsing the content in RAM.}
-\label{fig:featureful}
-\end{figure}
+existing working process. Though the design is practical, it is not
+very useful and the usage is limited to only a small selected group of
+users.
 
 The above phenomenons were also observed in the early days of user
 interface designs. Many new technologies---such as window, icon, menu,
@@ -304,8 +299,8 @@ of it.
 \subsection{Usability and Interface Transparency}
 % TODO: talk about user-centered design and usability
 This situation will last until the software developers are introduced
-to the concept of usability. Dated back since the 1980s, this concept
-was introduced by the published studies and analysis papers from a
+to the concept of usability. Since the 1980s, this concept was
+introduced by the published studies and analysis papers from a
 dedicated group of mostly psychologists and human factors researchers
 \citep{human:rubinstein, friendly:simpson, human:shneiderman,
   human:brown, software:dumas}. The philosophy behind this is that
@@ -418,25 +413,26 @@ diversity:
 \section{Patterns Of User Experience}
 \label{sec:pux}
 
-Patterns of user experience, as described by \citet{pux:blackwell},
-are a language for describing user experiences with structured
-information. From the previous practices of and knowledge gained by
-implementing software patterns, patterns of user experiences provide
-familiar feelings to software developers. They are perhaps what the
+Patterns of user experience, using the language similar to that of
+software patterns, describe a set of standards that help software
+developers on providing good user experience to the end-users with
+their software. From the previous practices of and knowledge gained by
+implementing software patterns, patterns of user experiences provide a
+familiar sense to software developers. They are perhaps what the
 software developers really need to improve the user experience of the
 typical end-users, instead of the currently yet clarified definitions
-and statements of user experience, and are also the one crucial factor
-for this to succeed.
+and statements of user experience, and are perhaps also the one
+crucial factor for this to succeed.
 
 \subsection{For End-users}
 Interestingly, the traditional software patterns can also be
-considered as patterns of user experience. But they are referring to
-user experience for the \textit{software developers}, i.e.\ software
-developers will have better experience with the source code if they
-choose to implement the appropriate software patterns into their
-design. For example, following a well known software pattern can
-increase the maintainability of the source code among the
-collaborating software developers.
+considered as patterns of user experience \citep{pux:blackwell}. But
+they are referring to user experience for the \textit{software
+  developers}, i.e.\ software developers will have better experience
+with the source code if they choose to implement the appropriate
+software patterns into their design. For example, following a well
+known software pattern can increase the maintainability of the source
+code among the collaborating software developers.
 
 But this intention for software patterns differs from the original
 intention traced back since architecture and urban planning
@@ -451,16 +447,15 @@ interface and technical details become the final product for the users
 \citep{pux:blackwell}. That is why software patterns are more
 applicable toward software developers.
 
-However, the user experience we are focusing here is the user
-experience for the \textit{end-users}, the actual users who will be
-using the software. Software developers are still the ones who have to
-implement the patterns of user experience. But it is the user
-experiences with the product of the end-users that are improved,
-instead of the user experiences with the source code of the software
-developers.
+However, the user experience that we refer to is the user experience
+for the \textit{end-users}, the actual users who will be using the
+software. Software developers are still the ones who have to implement
+the patterns of user experience. But it is the user experiences with
+the product of the end-users that are improved, instead of the user
+experiences with the source code of the software developers.
 
 \subsection{Examples}
-Table~\ref{tab:shield} gives a simple example on patterns of user
+Table \ref{tab:shield} gives a simple example on patterns of user
 experience for error management \citep{patterns:welie}. Coherent to
 the definition in section \ref{sec:pattern}, the pattern clearly
 specified the problem, the context, the forces, and the
