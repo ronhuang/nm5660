@@ -80,42 +80,65 @@ medium sized enterprises, which have a dominating percentage for most
 economies\footnote{\url{http://epp.eurostat.ec.europa.eu/portal/page/portal/european_business/special_topics/small_medium_sized_enterprises_SMEs}},
 usually take on a number of roles, such as being designers, user
 experience engineers and analysts. Hence in order to effectively
-improve the user experience of human-computer interaction, we argue in
-this article that more practical measures are required for software
-developers to implement them into their products.
+improve the user experience of human-computer interaction, we believe
+that a more practical measure adapted toward software developers are
+required.
 
-In the following sections, we will first go through the related works
-to our study (section \ref{sec:related}). Afterward, we will explain
-what patterns are from the perspective of software development
-(section \ref{sec:pattern}). Then we will cover a review on the
-various researches that led to the current state of user experience
-and interface transparency (section \ref{sec:ux}). Next, we will
-discuss about patterns of user experience and how they are beneficial
-to the software development domain, with particular interests in
-interface transparency (section \ref{sec:pux}). We will also propose
-experiments to collect patterns in this perspective (section
-\ref{sec:experiment}). Finally, the conclusion and future works
-(section \ref{sec:conclusion}).
+In this article, we argue that patterns of user experience---a
+collection of the best practices within the user experience design
+domain, transcribed in languages similar to software patterns---is a
+good tool for helping the software developers on improving the user
+experience for end-users. We also propose experiments on collecting
+patterns of user experience, with particular interest in balancing the
+transparency of user interface.
+
+In the following sections, we first go through the related works of
+our study (section \ref{sec:related}). Afterward, we cover the
+backgrounds on patterns, user experience, and transparency (section
+\ref{sec:backgrounds}). Next, we discuss about patterns of user
+experience (section \ref{sec:pux}) and propose experiments to collect
+them (section \ref{sec:experiment}). Finally, the conclusion and
+future works (section \ref{sec:conclusion}).
 
 
 \section{Related Works}
 \label{sec:related}
-% TODO: mention Universal usability
-[FIXME]
+\citet{language:alexander} and its companion book
+\citet{timeless:alexander} established the concept of patterns. The
+publications featured a very complete set of patterns on improving the
+quality of life for people who are living inside physical buildings or
+in city. Although the patterns target the architecture and urban
+planning, they can also apply to many disciplines, including software
+development.
 
-Many patterns of user experience from various facets of human-computer
-interaction are also being published or discussed.  For instance,
-\citet{patterns:tidwell} discussed about general subjects in
-human-computer interaction; \citet{touch:boudreaux} talked exclusively
-on user experience for multi-touch input device;
-\citet{participatory:dearden} examined the patterns for enabling users
-to participate in the product design.
+Patterns are no strangers to software developers. The publication of
+\textit{Design Patterns} \citep{patterns:gamma} dramatically changed
+the practice of software development. Since then, many authors have
+written books on software patterns covering various aspects of
+software engineering, This includes: programming paradigms,
+programming languages, software development methodologies,
+etc. However, these patterns are designed to help the software
+developers, instead of helping the actual users who is using the
+software.
 
-\citet{unix:raymond}
+There are also quite a few publications discussing the patterns of
+user experience. \citet{participatory:dearden} examined the patterns
+for enabling users to participate in the product design.
+\citet{speech:zajicek} suggested patterns of good speech interface
+design for older adults. \citet{unix:raymond} provided patterns to
+improve the user experience of command-line interface.
+\citet{patterns:tidwell} described patterns for graphical user
+interfaces. But none of the publications explicitly examined
+transparency within the patterns of user experience.
 
 
-\section{Patterns}
-\label{sec:pattern}
+\section{Backgrounds}
+\label{sec:backgrounds}
+Before we discuss the patterns of user experience and transparency, we
+would like to break them down and clarify the backgrounds and view
+points from where we are perceiving from.
+
+\subsection{Patterns}
 Software developers, like engineers in the other engineering
 disciplines, rely on standards---codified and enforced from good
 practices---to improve the quality and lower the cost of software
@@ -137,30 +160,29 @@ software patterns is so influential that it is often regarded as an
 indication to distinguishing rockstar software developers from
 mediocre ones \citep{rockstar:iskold}. But what are patterns?
 
-\subsection{Definitions}
 The term ``pattern'' originated from \citet{timeless:alexander}, where
 the author was looking for structures of urban planning and building
 architecture that have positive influence on people by improving their
 comfort and quality of life. He described:
 \begin{quote}
-  ``{\it Each pattern is a three-part rule, which expresses a relation
+  {\it ``Each pattern is a three-part rule, which expresses a relation
     between a certain context, a problem, and a solution.
 
-    As an element in the world, each pattern is a relationship between a
-    certain context, a certain system of forces which occurs repeatedly in
-    that context, and a certain spatial configuration which allows these
-    forces to resolve themselves.
+    As an element in the world, each pattern is a relationship between
+    a certain context, a certain system of forces which occurs
+    repeatedly in that context, and a certain spatial configuration
+    which allows these forces to resolve themselves.
 
-    As an element of language, a pattern is an instruction, which shows
-    how this spatial configuration can be used, over and over again, to
-    resolve the given system of forces, wherever the context makes it
-    relevant.
+    As an element of language, a pattern is an instruction, which
+    shows how this spatial configuration can be used, over and over
+    again, to resolve the given system of forces, wherever the context
+    makes it relevant.
 
-    The pattern is, in short, at the same time a thing, which happens in
-    the world, and the rule which tells us how to create that thing, and
-    when we must create it. It is both a process and a thing; both a
-    description of a thing which is alive, and a description of the
-    process which will generate that thing.}''
+    The pattern is, in short, at the same time a thing, which happens
+    in the world, and the rule which tells us how to create that
+    thing, and when we must create it. It is both a process and a
+    thing; both a description of a thing which is alive, and a
+    description of the process which will generate that thing.''}
 
   \raggedleft \citep[p. 247]{timeless:alexander}
 \end{quote}
@@ -176,24 +198,24 @@ Though many have given their own definitions of patterns from the
 software perspective, most of them still closely resemble to the
 original definition from Alexander. For example:
 \begin{quote}
-  ``{\it A pattern is a named nugget of instructive information that
+  {\it ``A pattern is a named nugget of instructive information that
     captures the essential structure and insight of a successful
     family of proven solutions to a recurring problem that arises
-    within a certain context and system of forces.}''
+    within a certain context and system of forces.''}
 
   \raggedleft \citet{patterns:appleton}
 \end{quote}
 
 \begin{quote}
-  ``{\it Each pattern is a three-part rule, which expresses a relation
+  {\it ``Each pattern is a three-part rule, which expresses a relation
     between a certain context, a certain system of forces which occurs
     repeatedly in that context, and a certain software configuration
-    which allows these forces to resolve themselves.}''
+    which allows these forces to resolve themselves.''}
 
   \raggedleft \citet{timeless:gabriel}
 \end{quote}
 
-\subsection{Comparison with Others}
+\subsection{Clarifications}
 There are quite a few other standards besides patterns which can also
 help software developers on improving the quality of the software. For
 example as mentioned above, guidelines and examples. Others include,
@@ -263,14 +285,12 @@ providing very precised solutions to specific settings, and the most
 concrete, providing mainly source code, of all standards.
 
 
-\section{User Experience}
-\label{sec:ux}
-In this section, we will move our attention to user experience. We
-will talk about its development from the early user interface designs
-to the more recent advancements. We will also discuss further on the
-topic of interface transparency.
+Now that a clearer understanding of what patterns are referring to in
+this article, we now move our attention to user experience and
+transparency. We talk about their development from the early user
+interface designs to the more recent advancements.
 
-\subsection{Technology-oriented}
+\subsection{Technology-oriented Development}
 When junior software developers are given the task of designing a new
 product or system, most of the time, they tend to squeeze as many
 features as possible into whatever they are suppose to design. The
@@ -296,8 +316,7 @@ since having too much influence over the design of the human interface
 and the lack of skills in this area, software developers do a poor job
 of it.
 
-\subsection{Usability and Interface Transparency}
-% TODO: talk about user-centered design and usability
+\subsection{Usability}
 This situation will last until the software developers are introduced
 to the concept of usability. Since the 1980s, this concept was
 introduced by the published studies and analysis papers from a
@@ -320,7 +339,6 @@ and not get in the way. Where the users can focus their attention on
 the tasks at hand as if the user interfaces do not exist or seem
 transparent \citep{computer:weiser}.
 
-% Bring up transparency, disrupt
 This interface transparency is an indication of good user interface
 design. From their research, \citet{transparency:holtzblatt} show that
 elements of an application design can disrupt users' work. They
@@ -331,8 +349,7 @@ usability studies and is considered the ideal relationship between
 user and tool with the tool seeming to disappear by
 \citet{transparency:rutkoski}.
 
-\subsection{Danger of Transparency}
-% danger of transparency
+\subsection{User Experience}
 However, the idea of striving for interface transparency is at the
 same time being challenged by others. \citet{windows:bolter} talked
 about the myth of transparency: \textit{The danger of transparency is
@@ -363,8 +380,38 @@ human needs beyond the ``functional''; stressing affective and
 emotional aspects of the interaction; and dealing with the nature of
 experience \citep{ux:hassenzahl}. Many models have been proposed,
 however the universal definition for user experience is still not well
-understood nor fully clarified. There are several reasons why this is
-so, according to \citet{ux:law} for example:
+understood nor fully clarified. Some definitions of user experience
+are included here to illustrate its diversity:
+\begin{quote}
+  {\it ``All the aspects of how people use an interactive product: the
+    way it feels in their hands, how well they understand how it
+    works, how they feel about it while they're using it, how well it
+    serves their purposes, and how well it fits into the entire
+    context in which they are using it.''}
+
+  \raggedleft \citet{experience:alben}
+\end{quote}
+
+\begin{quote}
+  {\it ``All aspects of the end-user's interaction with the company,
+    its services, and its product.''}
+
+  \raggedleft \citet{experience:nielsen}
+\end{quote}
+
+\begin{quote}
+  {\it ``A consequence of a user's internal state (predispositions,
+    expectations, needs, motivation, mood, etc.), the characteristics
+    of the designed system (e.g. complexity, purpose, usability,
+    functionality, etc.) and the context (or the environment) within
+    which the interaction occurs (e.g. organizational/social setting,
+    meaningfulness of the activity, voluntariness of use, etc.)''}
+
+  \raggedleft \citet{ux:hassenzahl}
+\end{description}
+
+There are several reasons why this is so, according to \citet{ux:law}
+for example:
 \begin{enumerate}
   \item User experience is associated with a wide range of vague and
     dynamic concepts, including emotional, affective, experiential,
@@ -378,41 +425,13 @@ so, according to \citet{ux:law} for example:
     environment while the product is being used, and more.
 \end{enumerate}
 
-\subsection{Definitions}
-Some definitions of user experience are given here to illustrate its
-diversity:
-\begin{quote}
-  ``{\it All the aspects of how people use an interactive product: the
-    way it feels in their hands, how well they understand how it
-    works, how they feel about it while they're using it, how well it
-    serves their purposes, and how well it fits into the entire
-    context in which they are using it.}''
 
-  \raggedleft \citet{experience:alben}
-\end{quote}
-
-\begin{quote}
-  ``{\it All aspects of the end-user's interaction with the company, its
-    services, and its product.}''
-
-  \raggedleft \citet{experience:nielsen}
-\end{quote}
-
-\begin{quote}
-  ``{\it A consequence of a user's internal state (predispositions,
-    expectations, needs, motivation, mood, etc.), the characteristics
-    of the designed system (e.g. complexity, purpose, usability,
-    functionality, etc.) and the context (or the environment) within
-    which the interaction occurs (e.g. organizational/social setting,
-    meaningfulness of the activity, voluntariness of use, etc.)}''
-
-  \raggedleft \citet{ux:hassenzahl}
-\end{description}
+\subsection{Transparency}
+[FIXME]
 
 
-\section{Patterns Of User Experience}
+\section{Patterns Of User Experience and Transparency}
 \label{sec:pux}
-
 Patterns of user experience, using the language similar to that of
 software patterns, describe a set of standards that help software
 developers on providing good user experience to the end-users with
@@ -507,7 +526,7 @@ particular problem.
   \end{center}
 \end{table}
 
-\subsection{For Interface Transparency}
+\subsection{For Transparency}
 % Talk about various other non interface transparency.
 % Talk about Linux and Windows as example for transparency.
 
