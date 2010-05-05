@@ -92,3 +92,5 @@ it.
 * Future of digital design
 - Usability engineering
 - Interaction design
+
+* HCI and software engineers
