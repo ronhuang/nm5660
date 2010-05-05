@@ -42,15 +42,15 @@
 \section{Introduction}
 \label{sec:introduction}
 The notion of user experience has been wildly adopted in the field of
-human-computer interaction. However, as many existing literature
-pointed out already \citep{ux:hassenzahl, ux:law}, a common agreement
-on the exact definition of user experience is still in debate, and is
-so far not fully understood by the people---researchers, consultants,
-managers in the industry, and practitioners---in the field.
+human-computer interaction. However, as many existing literature has
+already pointed out \citep{ux:hassenzahl, ux:law}, a common agreement
+on the exact definition of user experience is still in debate, and so
+far is not fully understood by researchers, consultants, managers in
+the industry, and practitioners in the field.
 
 They do agree that the traditional usability framework, which focus
 primarily on work-related and performance-based use, is limited and
-can no longer model the ever more complex settings of the modern
+can no longer model the ever more complex settings of modern
 computation. This was especially true when ubiquitous computing was
 introduced, where the interfaces between users and computers are no
 longer single, static, and restricted to the traditional window, icon,
@@ -58,7 +58,8 @@ menu, and pointing device. Instead, multiple interfaces are spread
 throughout the environment and are updated dynamically depending on
 the context \citep{windows:bolter}.
 
-But besides the above agreement, people from different backgrounds and
+But besides the above agreement that the traditional usability
+framework is not enough, people from different backgrounds and
 interests, with varying focuses and concerns, have formulated their
 own definitions and statements on user experience. Some tackle this
 from the emotional and affective aspects of human-computer
@@ -66,32 +67,27 @@ interaction, such as stressing the importance of emotions as
 consequences of product use \citep{emotions:desmet}. Some deal with
 the nature of experience or the experiential aspect,
 e.g.\ \citet{experience:forlizzi}. And yet others address the human
-needs beyond the instrumental, such as surprise or intimacy.
-\citep{alternatives:gaver}.
+needs beyond the ``functional'' \citep{emotional:norman}, such as
+surprise or intimacy. \citep{alternatives:gaver}.
 
-Though very exciting to witness and participate in this ``disordered''
-time frame, where opportunities are still around to make significant
+Though very exciting to witness and take part in this particular time
+frame, where opportunities are still around to make significant
 contributions to the human knowledge, it is actually quite troublesome
 for practitioners in the field of human-computer interaction. And in
 the case of this article, we specifically focus our attention on
 software developers.
 
-Among human-computer interaction practitioners from all walks of life,
-software developers are of special interest to us: software developers
-have relatively higher percentage than other professions in the
-information technology industry. In most economies, small and medium
-enterprises are much greater in number. For example, they comprise
-approximately 99\% of all firms in European
-Union\footnote{\url{http://epp.eurostat.ec.europa.eu/portal/page/portal/european_business/special_topics/small_medium_sized_enterprises_SMEs}}. And
-they tend to employ more personnel closer to the core business they
-are providing, due to the smaller size and limited budgets. So for
-small and medium enterprises which are related to software or
-human-computer interaction, software developers more often than not
-will have higher percentage in the demographic profiles, not designers
-nor user experience engineers. Hence in order to effectively improve
-the \textit{user experience} of human-computer interaction, we need
-effective measures for software developers to implement it into their
-product.
+Software developers are the focus group for this article. More often
+than not, researchers in the user experience field concentrate their
+attentions primarily on two set of people: designers and
+end-users. But the fact is that, software developers in small and
+medium sized enterprises, which have a dominating percentage for most
+economies\footnote{\url{http://epp.eurostat.ec.europa.eu/portal/page/portal/european_business/special_topics/small_medium_sized_enterprises_SMEs}},
+usually take on a number of roles, such as being designers, user
+experience engineers and analysts. Hence in order to effectively
+improve the user experience of human-computer interaction, we argue in
+this article that more practical measures are required for software
+developers to implement them into their products.
 
 In the following sections, we will first go through the related works
 to our study (section \ref{sec:related}). Afterward, we will explain
@@ -152,24 +148,26 @@ the author was looking for structures of urban planning and building
 architecture that have positive influence on people by improving their
 comfort and quality of life. He described:
 \begin{quote}
-Each pattern is a three-part rule, which expresses a relation between
-a certain context, a problem, and a solution.
+  ``{\it Each pattern is a three-part rule, which expresses a relation
+    between a certain context, a problem, and a solution.
 
-As an element in the world, each pattern is a relationship between a
-certain context, a certain system of forces which occurs repeatedly in
-that context, and a certain spatial configuration which allows these
-forces to resolve themselves.
+    As an element in the world, each pattern is a relationship between a
+    certain context, a certain system of forces which occurs repeatedly in
+    that context, and a certain spatial configuration which allows these
+    forces to resolve themselves.
 
-As an element of language, a pattern is an instruction, which shows
-how this spatial configuration can be used, over and over again, to
-resolve the given system of forces, wherever the context makes it
-relevant.
+    As an element of language, a pattern is an instruction, which shows
+    how this spatial configuration can be used, over and over again, to
+    resolve the given system of forces, wherever the context makes it
+    relevant.
 
-The pattern is, in short, at the same time a thing, which happens in
-the world, and the rule which tells us how to create that thing, and
-when we must create it. It is both a process and a thing; both a
-description of a thing which is alive, and a description of the
-process which will generate that thing.
+    The pattern is, in short, at the same time a thing, which happens in
+    the world, and the rule which tells us how to create that thing, and
+    when we must create it. It is both a process and a thing; both a
+    description of a thing which is alive, and a description of the
+    process which will generate that thing.}''
+
+  \raggedleft \citep[p. 247]{timeless:alexander}
 \end{quote}
 
 Several years later, this idea of patterns was introduced to the
@@ -182,18 +180,23 @@ important publications in software development, \textit{Design
 Though many have given their own definitions of patterns from the
 software perspective, most of them still closely resemble to the
 original definition from Alexander. For example:
-\begin{description}
-  \item[\citet{patterns:appleton}] \hfill \\
-    A pattern is a named nugget of instructive information that
+\begin{quote}
+  ``{\it A pattern is a named nugget of instructive information that
     captures the essential structure and insight of a successful
     family of proven solutions to a recurring problem that arises
-    within a certain context and system of forces.
-  \item[\citet{timeless:gabriel}] \hfill \\
-    Each pattern is a three-part rule, which expresses a relation
+    within a certain context and system of forces.}''
+
+  \raggedleft \citet{patterns:appleton}
+\end{quote}
+
+\begin{quote}
+  ``{\it Each pattern is a three-part rule, which expresses a relation
     between a certain context, a certain system of forces which occurs
     repeatedly in that context, and a certain software configuration
-    which allows these forces to resolve themselves.
-\end{description}
+    which allows these forces to resolve themselves.}''
+
+  \raggedleft \citet{timeless:gabriel}
+\end{quote}
 
 \subsection{Comparison with Others}
 There are quite a few other standards besides patterns which can also
@@ -366,12 +369,12 @@ that solely pursuing for interface transparency and performance is not
 enough, and a richer model is required to encapsulate the other
 perspectives of the user interaction. These all fall under the
 umbrella term of user experience, which may include: addressing the
-human needs beyond the instrumental; stressing affective and emotional
-aspects of the interaction; and dealing with the nature of experience
-\citep{ux:hassenzahl}. Many models have been proposed, however the
-universal definition for user experience is still not well understood
-nor fully clarified. There are several reasons why this is so,
-according to \citet{ux:law} for example:
+human needs beyond the ``functional''; stressing affective and
+emotional aspects of the interaction; and dealing with the nature of
+experience \citep{ux:hassenzahl}. Many models have been proposed,
+however the universal definition for user experience is still not well
+understood nor fully clarified. There are several reasons why this is
+so, according to \citet{ux:law} for example:
 \begin{enumerate}
   \item User experience is associated with a wide range of vague and
     dynamic concepts, including emotional, affective, experiential,
@@ -388,25 +391,32 @@ according to \citet{ux:law} for example:
 \subsection{Definitions}
 Some definitions of user experience are given here to illustrate its
 diversity:
-\begin{description}
-  \item[\citet{experience:alben}] \hfill \\
-    All the aspects of how people use an interactive product: the way
-    it feels in their hands, how well they understand how it works,
-    how they feel about it while they're using it, how well it serves
-    their purposes, and how well it fits into the entire context in
-    which they are using it.
+\begin{quote}
+  ``{\it All the aspects of how people use an interactive product: the
+    way it feels in their hands, how well they understand how it
+    works, how they feel about it while they're using it, how well it
+    serves their purposes, and how well it fits into the entire
+    context in which they are using it.}''
 
-  \item[\citet{experience:nielsen}] \hfill \\
-    All aspects of the end-user's interaction with the company, its
-    services, and its product.
+  \raggedleft \citet{experience:alben}
+\end{quote}
 
-  \item[\citet{ux:hassenzahl}] \hfill \\
-    A consequence of a user's internal state (predispositions,
+\begin{quote}
+  ``{\it All aspects of the end-user's interaction with the company, its
+    services, and its product.}''
+
+  \raggedleft \citet{experience:nielsen}
+\end{quote}
+
+\begin{quote}
+  ``{\it A consequence of a user's internal state (predispositions,
     expectations, needs, motivation, mood, etc.), the characteristics
     of the designed system (e.g. complexity, purpose, usability,
     functionality, etc.) and the context (or the environment) within
     which the interaction occurs (e.g. organizational/social setting,
-    meaningfulness of the activity, voluntariness of use, etc.)
+    meaningfulness of the activity, voluntariness of use, etc.)}''
+
+  \raggedleft \citet{ux:hassenzahl}
 \end{description}
 
 
