@@ -17,8 +17,8 @@
 
 
 % TODO: change to ``Toward...''?
-\title{Investigation of the relationship between transparency and user
-  experience}
+\title{[FIXME] Investigation of the relationship between transparency
+  and user experience}
 \author{Yih-Lun Huang\\
 HY090191Y\\
 \texttt{ylhuang@nus.edu.sg}}
@@ -121,15 +121,24 @@ etc. However, these patterns are designed to help the software
 developers, instead of helping the actual users who is using the
 software.
 
-There are also quite a few publications discussing the patterns of
-user experience. \citet{participatory:dearden} examined the patterns
-for enabling users to participate in the product design.
+There are quite a few publications discussing the patterns of user
+experience. \citet{participatory:dearden} examined the patterns for
+enabling users to participate in the product design.
 \citet{speech:zajicek} suggested patterns of good speech interface
 design for older adults. \citet{unix:raymond} provided patterns to
 improve the user experience of command-line interface.
 \citet{patterns:tidwell} described patterns for graphical user
 interfaces. But none of the publications explicitly examined
 transparency within the patterns of user experience.
+
+There are also other attempt on narrowing the gap between software
+developers and human-computer interaction. In \citet{agile:memmel},
+the authors proposed a cross-discipline user interface design
+lifecycle that integrates software engineering and human-computer
+interaction under the umbrella of agile software development. However,
+their work is focused on adapting the formal methods of human-computer
+interaction into the more light-weighted engineering lifecycle of the
+recent agile movement.
 
 
 \section{Backgrounds}
@@ -185,7 +194,7 @@ comfort and quality of life. He described:
     thing; both a description of a thing which is alive, and a
     description of the process which will generate that thing.''}
 
-  \raggedleft \citep[p. 247]{timeless:alexander}
+  \raggedleft \citep[p.~247]{timeless:alexander}
 \end{quote}
 
 Several years later, this idea of patterns was introduced to the
@@ -351,9 +360,9 @@ with the tool seeming to disappear by \citet{transparency:rutkoski}.
 
 \subsection{User Experience}
 However, the idea of striving for transparency is at the same time
-being challenged by others. \citet{windows:bolter} talked about the
-myth of transparency: {\it ``The danger of transparency is that the
-  interface will mask the operation of the system exactly when the
+being challenged by others. \citet[p.~55]{windows:bolter} talked about
+the myth of transparency: {\it ``The danger of transparency is that
+  the interface will mask the operation of the system exactly when the
   user needs to see and understand what the system is doing.''} One
 reason for this danger comes from the fact that designers and the
 users each have their own conceptual models or mental images of the
@@ -442,8 +451,8 @@ experience are applied to the software they use. As long as parts of
 the software are familiar or recognizable enough to the end-users, and
 the relationship among the parts are clear, they can apply their
 previous knowledge when using the software
-\citep[p. xiii]{patterns:tidwell}. A similar point is also expressed
-in \citet[p. 150]{humane:raskin}: {\it ``When users say that an
+\citep[p.~xiii]{patterns:tidwell}. A similar point is also expressed
+in \citet[p.~150]{humane:raskin}: {\it ``When users say that an
   interface is intuitive, they mean that it operates just like some
   other software or method with which they are familiar.''} Since
 patterns of user experience are collections of many familiar parts
@@ -555,61 +564,33 @@ particular problem.
 \end{table}
 
 \subsection{For Transparency}
-% Talk about various other non interface transparency.
-% Talk about Linux and Windows as example for transparency.
+Despite the limitations and dangers, transparency is still a crucial
+factor within the user experience. Though many notions have surfaced
+within the user experience community over the years, usability
+engineering---considers transparency as one of the ultimate goals
+\citep{transparency:rutkoski}---is still believed to be the more
+concrete premises and disciplines below the umbrella term of user
+experience \citep{future:memmel}.
 
-% * Different meanings of interface transparency.
-% * Brief mentioning of interface transparency in the history of
-%   human-computer interaction.
-[FIXME]
+Danger of transparency is about striving for too much transparency in
+the design. Similarly, design with too less transparency, or too much
+reflection, is equally dangerous. Users would have to pause every
+single moment to ponder on the actions they have to take in order to
+complete that task at hand. Hence a good design should be a balance of
+the two. {\it ``Every digital artifact oscillates between being
+  transparent and reflective''} \citep[p.~6]{windows:bolter}.
 
-Though there are quite a few existing publications discussing patterns
-of user experience in various aspects of human-computer interaction
-(refer to section \ref{sec:related}), we will focus our attention on
-investigating the patterns of user experience for interface
-transparency.
-
-Interface transparency often have different meanings when presented to
-diverse set of audiences. For expert system, interface transparency is
-important for gaining trust to the users [FIXME].
-
-Similarly, for Unix power users following the Unix philosophy,
-interface transparency might suggest that the software is capable of
-churning out excessive amount of messages when error occurred. These
-power users are able to interpret the messages and partially `replay'
-the flow of control\footnote{Refers to the order in which the
-  individual statements or instructions of a program are executed or
-  evaluated.}  for the software. The software at fault is not a
-completely opaque black box to them with the help of the
-messages. They can sort of see through the software and figure out the
-problem hiding underneath \citep{unix:raymond}.
-
-On the other hand, typical end-users do not usually consider excessive
-messages as interface transparency. A common action when typical
-end-users encounter unexpected information: they try to get rid of it
-as soon as possible \citep{oldnew:chen}. To them, the information are
-regarded as either gibberish or elaborated way of describing something
-dangerous. This is because the information is unforeseen and cannot
-fit into the conceptual model which they had previously formed for the
-software. Hence, instead of being treated as interface transparency,
-the excessive messages are more like an unknown dark spot occluding
-the flow of experience\footnote{Refers to the mental state of
-  operation in which a person is fully immersed in a feeling of full
-  involvement in the process of an activity.}.
-
-
-% Form pattern and guidelines for software developer, with respect to
-% interface transparency.
-[Elaborated paragraphs explaining interface transparency as my second
-  research interest.]
-
-Added to this, the emergence of the user experience is an attempt to
-inform design and evaluation has been widespread in HCI. Such that,
-researchers are proposing user experience encapsulating the idea of
-interface transparency.
-
-Hence, the relationship between transparency and user
-experience will also be examined.
+Quite a few patterns of user experience have already been discussed
+\citep{participatory:dearden, speech:zajicek, unix:raymond,
+  patterns:tidwell} in the human-computer interaction field. However,
+to our knowledge, there is no publication explicitly discussing
+patterns that balance the transparency in user interface. Added to
+this, the emergence of the user experience is an attempt to inform
+design and evaluation has been widespread in human-computer
+interaction. Such that, researchers are proposing user experience
+encapsulating the idea of transparency. Therefore, in our proposing
+experiment, we would like to examine the patterns of user experience
+in transparency.
 
 
 \section{Planned Experiments}
@@ -629,28 +610,7 @@ topic, such as \citet{early:forlizzi}, \citet{emotional:norman},
 \citet{experience:desmet}, and \citet{ux:law}.
 
 For sake of completeness, some view points on user experience will
-still be discussed in the following section. However, the main
-research goal for this article is to further explore interface
-transparency within the field of user experience. Interface
-transparency is still a crucial factor in this field, even though user
-experience has been the prominent subject in recent years. In his
-article, \citet{future:memmel} suggests that usability engineering and
-interaction design will be the more concrete premises and disciplines
-below the umbrella term of user experience. This argument is similar
-to the one from \citet{windows:bolter} that transparency is only half
-the story---each digital design should move back and forth between
-being transparent and being reflective.
-
-Transparent and reflective, two contrasting albeit interesting point
-of views prompted people to think about whether they have been too
-obsessed with achieving interface transparency, the benefits and
-limitations of interface transparency, measuring interface
-transparency. Added to this, the emergence of the user experience is
-an attempt to inform design and evaluation has been widespread in
-HCI. Such that, researchers are proposing user experience
-encapsulating the idea of transparency. Hence, the relationship
-between transparency and user experience will also be examined.
-
+still be discussed in the following section. 
 % Talk about the experiment.
 \subsection{Experiment}
 [FIXME]
