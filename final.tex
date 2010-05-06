@@ -16,17 +16,29 @@
 \begin{document}
 
 
-% TODO: change to ``Toward...''?
-\title{[FIXME] Investigation of the relationship between transparency
-  and user experience}
+\title{Toward Investigation of Patterns of User Experience for
+  Transparency}
+
 \author{Yih-Lun Huang\\
 HY090191Y\\
 \texttt{ylhuang@nus.edu.sg}}
+
 \maketitle
 
 
 \begin{abstract}
-[FIXME]
+Traditionally, studies in user experience focus primarily on designers
+and end-users. However in small and medium sized enterprises, software
+developers tend to take on a number of roles, including designers,
+user experience engineers, and analysts. In this article, we argue
+that in order to effectively improve the user experience of the
+end-users, a more pragmatic measure---patterns of user experience---is
+more suitable for aiding the software developers. Added to this, the
+emergence of the user experience is an attempt to inform design and
+evaluation has been widespread in human-computer interaction. Such
+that, researchers are proposing user experience encapsulating the idea
+of transparency. Hence experiments are also planned in this article to
+examine the patterns of user experience for transparency.
 \end{abstract}
 
 
@@ -588,58 +600,66 @@ patterns that balance the transparency in user interface. Added to
 this, the emergence of the user experience is an attempt to inform
 design and evaluation has been widespread in human-computer
 interaction. Such that, researchers are proposing user experience
-encapsulating the idea of transparency. Therefore, in our proposing
-experiment, we would like to examine the patterns of user experience
-in transparency.
+encapsulating the idea of transparency. Therefore, patterns of user
+experience for transparency will be the primary focus of the planned
+experiments in the next section.
 
 
 \section{Planned Experiments}
 \label{sec:experiment}
-[FIXME]
+Through the experiments, we wish to gather patterns of user
+experience, which aids the software developers in implementing
+software to achieve balance of transparency and reflection. For the
+experiments, we plan to conduct them via a new drawing application for
+children and the associated human interface device.
 
-\subsection{Research Goal}
-[Elaborated paragraphs combining patterns of user experience and
-  interface transparency as my research goal.]
+\subsection{Application}
+The aim of the application is to allow small children to scribble
+intuitively on any surface and be creative wherever they are. It could
+be at the dining table of a restaurant, on the wall of a bedroom, or
+anyplace where the children are bored and need something to
+do. However, the caveat is that these drawing activities cannot cause
+any mess or damage to the places.
 
-% problem I am trying to solve
-With all this being said, this article is not another attempt to
-develop a common view on user experience. Numerous literature,
-conferences, and workshops have already attempted to address this
-topic, such as \citet{early:forlizzi}, \citet{emotional:norman},
-\citet{action:dourish}, \citet{ux:hassenzahl},
-\citet{experience:desmet}, and \citet{ux:law}.
+\subsection{Device}
+In this scribbling application, hands and fingers will be the primary
+painting utensils. The interaction with the application will hence in
+same way be similar to interacting with a larger version of the
+multi-touch touchpad. But instead of static and fixed sized like the
+touchpad, the scribbling application will require a new device that
+operates on any surface, as if there is always a touchpad following
+underneath the users' hand.
 
-For sake of completeness, some view points on user experience will
-still be discussed in the following section. 
-% Talk about the experiment.
-\subsection{Experiment}
-[FIXME]
+A very early prototype of such a device has already been built. It
+requires the users to put on a specially made glove that emits
+infrared from the tips of the fingers. A camera capable of capturing
+infrared is used to capture the positions of the fingers. These
+positions are processed and transformed into gestures. By dynamically
+adjusting the position and direction of the camera, the device is
+capable of providing the multi-touch touchpad experience on any
+surface. Some preliminary evaluations and experiments on the prototype
+has also been conducted.  Based on the results and suggestions, we
+have began to design the next prototype.
 
-A new human interface device and application will be developed to
-investigate interface transparency within user experience. This new
-device will provide similar functionality to the multi-touch touchpad
-that comes with recent laptops. However, the device will enable the
-users to perform the usual tasks of multi-touch touchpad on any
-surface, as if the physical touchpad is underneath their hand. The
-development of this new device is actually based upon our previous
-study \citep{lmnt:huang}, where the first-generation prototype was
-built and some preliminary studies were conducted. Much of the
-feedback from the first-generation prototype are taken into
-consideration when designing the new device for this study.
+\subsection{Experiments}
+The experiments will be similar to the ones we conducted with the
+early prototype, by adjusting various configurations of the
+application and performing both qualitative and quantitative studies
+on the pre-post questionnaires. However, more emphasis will be put on
+the quantitative results. This is where most of the useful feedback,
+from our experiments with the early prototype, are from.
 
-% Application based on Baba Painter.
-An application will be developed to accompany the new human interface
-device. This application will too be an extension to our other
-previous study, an interactive painting and collaboration reviewing
-system \citep{baba:abeyrathne}. However, since the instrument will be
-replaced by the new device developed in this study, the scenario and
-the users will be adjusted accordingly. We planed to target the
-application to kids. The application will allow small children to
-scribble intuitively on any surface and be creative wherever they are,
-whether on the dining table of a restaurant or on the wall in the
-bedroom, while without causing any mess or damage.
-
-% User, product, context
+As mentioned at the beginning of this section, we wish to collect the
+results and transcribe the best practices into patterns of user
+experience. A possible example of this, which occurred in our study
+from the early prototype, is that even though the early prototype
+provides a dynamic and relatively much large region to interact with
+than the normal touchpad, a few users still requested some form of
+indication to inform them the boundary, much like the physical
+boundary with the normal touchpad. This may be suggesting that under
+certain situations, users may prefer having visible boundary
+(reflection). And in other situations, they would prefer not having
+visible boundary (transparent).
 
 
 \section{Conclusion}
