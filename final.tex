@@ -139,6 +139,7 @@ would like to break them down and clarify the backgrounds and view
 points from where we are perceiving from.
 
 \subsection{Patterns}
+\label{sec:patterns}
 Software developers, like engineers in the other engineering
 disciplines, rely on standards---codified and enforced from good
 practices---to improve the quality and lower the cost of software
@@ -351,9 +352,9 @@ with the tool seeming to disappear by \citet{transparency:rutkoski}.
 \subsection{User Experience}
 However, the idea of striving for transparency is at the same time
 being challenged by others. \citet{windows:bolter} talked about the
-myth of transparency: \textit{The danger of transparency is that the
+myth of transparency: {\it ``The danger of transparency is that the
   interface will mask the operation of the system exactly when the
-  user needs to see and understand what the system is doing}. One
+  user needs to see and understand what the system is doing.''} One
 reason for this danger comes from the fact that designers and the
 users each have their own conceptual models or mental images of the
 product. Ideally, these two models should be identical for the users
@@ -424,18 +425,51 @@ for example:
 \end{enumerate}
 
 
-\section{Patterns Of User Experience and Transparency}
+\section{Patterns Of User Experience}
 \label{sec:pux}
 Patterns of user experience, using the language similar to that of
-software patterns, describe a set of standards that help software
-developers on providing good user experience to the end-users with
-their software. From the previous practices of and knowledge gained by
-implementing software patterns, patterns of user experiences provide a
-familiar sense to software developers. They are perhaps what the
-software developers really need to improve the user experience of the
-typical end-users, instead of the currently yet clarified definitions
-and statements of user experience, and are perhaps also the one
-crucial factor for this to succeed.
+software patterns, describe a set of standards on implementing user
+interfaces. By utilizing these patterns, senses of
+\textit{familiarity} are presented to both side of the interface
+design, the end-users and the software developers. The familiarity on
+one side will benefit the end-users by providing a better user
+experience with the user interface. The familiarity on the other side
+will benefit the software developers by assisting them to implement
+better user experience to the software.
+
+End-users will have a sense of familiarity when patterns of user
+experience are applied to the software they use. As long as parts of
+the software are familiar or recognizable enough to the end-users, and
+the relationship among the parts are clear, they can apply their
+previous knowledge when using the software
+\citep[p. xiii]{patterns:tidwell}. A similar point is also expressed
+in \citet[p. 150]{humane:raskin}: {\it ``When users say that an
+  interface is intuitive, they mean that it operates just like some
+  other software or method with which they are familiar.''} Since
+patterns of user experience are collections of many familiar parts
+found in user interfaces, categorized and documented into a reusable
+common structure for many different contexts, they provide exactly the
+sense of familiarity that the end-users can benefit from.
+
+Software developers, on the other hand, will also have a sense of
+familiarity when implementing patterns of user experience to their
+software. Working with (software) patterns is a common and crucial
+trait among the software developers, as descried in section
+\ref{sec:patterns}. Since patterns of user experience are transcribed
+in literature similar to that of software patterns, previous practices
+of and knowledge gained by implementing software patterns can also
+significantly assist software developers on implementing the patterns
+of user experience.
+
+The reason why we emphasize on software developers, as mentioned in
+section \ref{sec:introduction}, instead of on designers in the common
+human-computer interaction publications, is that software developers
+are more often than not the actual ``designer'' in charge of designing
+the user experience for end-users. Hence rather than forming a
+consensus on definition or evaluation on user experience, we believe
+that more pragmatic measures should be given to the software
+developers in order to effectively improve the user experience of the
+end-users. And that patterns of user experience could be one of them.
 
 \subsection{For End-users}
 Interestingly, the traditional software patterns can also be
@@ -470,16 +504,16 @@ experiences with the source code of the software developers.
 \subsection{Examples}
 Table \ref{tab:shield} gives a simple example on patterns of user
 experience for error management \citep{patterns:welie}. Coherent to
-the definition in section \ref{sec:pattern}, the pattern clearly
+the definition in section \ref{sec:patterns}, the pattern clearly
 specified the problem, the context, the forces, and the
 solutions. Some additional fields are also included to help people
 understanding the pattern better.
 
 For comparison, the following is a user interface guideline on how
-text should be formatted: \textit{The \textbf{system font} (Lucida
+text should be formatted: \textit{``The \textbf{system font} (Lucida
   Grande Regular 13 point) is used for text in menus, dialogs, and
-  full-size controls} \citep{hig:apple}. Contrast to patterns, it does
-not provide the ins and outs on how the solution was devised. And
+  full-size controls''} \citep{hig:apple}. Contrast to patterns, it
+does not provide the ins and outs on how the solution was devised. And
 although it offers a direct solution, it is very specific to a
 particular problem.
 
