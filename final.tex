@@ -106,11 +106,11 @@ transparency of user interface.
 
 In the following sections, we first go through the related works of
 our study (section \ref{sec:related}). Afterward, we cover the
-backgrounds on patterns, user experience, and transparency (section
-\ref{sec:backgrounds}). Next, we discuss about patterns of user
-experience (section \ref{sec:pux}) and propose studies to collect
-them (section \ref{sec:studies}). Finally, the conclusion and
-future works (section \ref{sec:conclusion}).
+backgrounds on usability, transparency, user experience, and patterns
+(section \ref{sec:backgrounds}). Next, we discuss about patterns of
+user experience (section \ref{sec:pux}) and propose studies to collect
+them (section \ref{sec:studies}). Finally, the conclusion and future
+works (section \ref{sec:conclusion}).
 
 
 \section{Related Works}
@@ -156,12 +156,153 @@ movement.
 
 \section{Backgrounds}
 \label{sec:backgrounds}
-Before we discuss the patterns of user experience and transparency, we
-would like to break them down and clarify the backgrounds and view
-points the perspective we are interested in.
+Before we discuss the patterns of user experience, we would like to
+break them down and clarify the backgrounds and view points the
+perspective we are interested in.
+
+\subsection{Technology-oriented Development}
+When junior software developers are given the task of designing a new
+product or system, most of the time, they tend to squeeze as many
+features as possible into whatever they are suppose to design. The
+interfaces between the user and the design are scattered all
+over. This can often be observed in corporates where a junior software
+developer is assigned to develop an internal tool to facilitate an
+existing working process. Though the design is practical, it is not
+very useful and the usage is limited to only a small selected group of
+users.
+
+The above phenomenons were also observed in the early days of user
+interface designs. Many new technologies---such as window, icon, menu,
+and pointing device---had grasped the attentions of the software
+developers. They were very eager to try out these new technologies and
+often falsely believed that the implementation of these new
+technologies were the goal of successful software.
+
+This is indicated by \citet{inmates:cooper} that although software
+developers work hard to make their software easy to use, their frame
+of reference is themselves and as a result they make it easy for other
+software developers, instead of typical end-users. He explains that
+since having too much influence over the design of the human interface
+and the lack of skills in this area, software developers do a poor job
+of it.
+
+\subsection{Usability}
+This situation will last until the software developers are introduced
+to the concept of usability. Since the 1980s, this concept was
+introduced by the published studies and analysis papers from a
+dedicated group of mostly psychologists and human factors researchers
+\citep{human:rubinstein, friendly:simpson, human:shneiderman,
+  human:brown, software:dumas}. The philosophy behind this is that
+every stage of the development process---requirements, design,
+implementation, verification, and maintenance---are given great
+attention to the needs and limitations of the users.
+
+In this user-oriented development, contrast to the previous
+technology-oriented or feature-oriented development, software
+developers work with experts from various specific fields---and most
+importantly, also collaborate closely with the actual users---to bring
+efficient, easy-to-learn, easy-to-memorize, and non-disruptive product
+to the user. They form psychology and physiology models of the user to
+anticipate their needs and limitations. And from that model, the
+software developers could build products that perfectly fit the users
+and not get in the way. Where the users can focus their attention on
+the tasks at hand as if the user interfaces do not exist or seem
+transparent \citep{computer:weiser}.
+
+This interface transparency is an indication of good user interface
+design. From their research, \citet{transparency:holtzblatt} show that
+elements of an application design can disrupt users' work. They
+observed that only when the users are not disrupted by the computer
+system will they remain in the flow of their work and experience
+transparency. It is also one of the ultimate goals for usability
+studies and is considered the ideal relationship between user and tool
+with the tool seeming to disappear by \citet{transparency:rutkoski}.
+
+\subsection{User Experience}
+However, the idea of striving for transparency is at the same time
+being challenged by others. \citet[p.~55]{windows:bolter} talked about
+the myth of transparency: {\it ``The danger of transparency is that
+  the interface will mask the operation of the system exactly when the
+  user needs to see and understand what the system is doing.''} One
+reason for this danger comes from the fact that designers and the
+users each have their own conceptual models or mental images of the
+product. Ideally, these two models should be identical for the users
+to understand and use the product properly. Unfortunately, this might
+not always be the case. So the users often have to form their own
+model exclusively from the observation of the product, whether from
+the exterior guise, the feedback provided, the responses from blogger,
+documentations, etc \citet{design:norman}. But if the product was
+invisible or transparent to the users, how could it act as a medium to
+help the users to understand itself? Transparency eliminates the
+communicative aspect of the user interfaces, along with others such as
+the engaging aspect.
+
+% other direction: user experience
+% difficulty of user experience
+The community of human-computer interaction quickly embraced the idea
+that solely pursuing for interface transparency and performance is not
+enough, and a richer model is required to encapsulate the other
+perspectives of the user interaction. These all fall under the
+umbrella term of user experience, which may include: addressing the
+human needs beyond the ``functional''; stressing affective and
+emotional aspects of the interaction; and dealing with the nature of
+experience \citep{ux:hassenzahl}. Many models have been proposed,
+however the universal definition for user experience is still not well
+understood nor fully clarified. Some definitions of user experience
+are included here to illustrate its diversity:
+\begin{quote}
+  {\it ``All the aspects of how people use an interactive product: the
+    way it feels in their hands, how well they understand how it
+    works, how they feel about it while they're using it, how well it
+    serves their purposes, and how well it fits into the entire
+    context in which they are using it.''}
+
+  \raggedleft \citet{experience:alben}
+\end{quote}
+
+\begin{quote}
+  {\it ``All aspects of the end-user's interaction with the company,
+    its services, and its product.''}
+
+  \raggedleft \citet{experience:nielsen}
+\end{quote}
+
+\begin{quote}
+  {\it ``A consequence of a user's internal state (predispositions,
+    expectations, needs, motivation, mood, etc.), the characteristics
+    of the designed system (e.g. complexity, purpose, usability,
+    functionality, etc.) and the context (or the environment) within
+    which the interaction occurs (e.g. organizational/social setting,
+    meaningfulness of the activity, voluntariness of use, etc.)''}
+
+  \raggedleft \citet{ux:hassenzahl}
+\end{description}
+
+There are several reasons why this is so, according to \citet{ux:law}
+for example:
+\begin{enumerate}
+  \item User experience is associated with a wide range of vague and
+    dynamic concepts, including emotional, affective, experiential,
+    hedonic, and aesthetic variables. Whether or not to include each
+    of these variables is greatly dependent on the interests and
+    background of the proposing author.
+  \item The unit for measuring user experience is
+    \textit{malleable}. Unlike usability where only a single aspect of
+    interaction between the user and the product is assessed with well
+    defined criteria, it could be extended to include multiple users,
+    environment while the product is being used, and more.
+\end{enumerate}
+
 
 \subsection{Patterns}
 \label{sec:patterns}
+Now that a clearer understanding of usability incorporating ideas of
+transparency and user experience that was introduced because of
+limitations of engineering usability, we now move our attention to
+patterns and clarify what we mean by patterns. We argue that patterns
+is a good direction for informing user experience and in particular
+patterns for software engineers.
+
 Software developers, like engineers in the other engineering
 disciplines, rely on standards---codified and enforced from good
 practices---to improve the quality and lower the cost of software
@@ -308,146 +449,7 @@ providing very precised solutions to specific settings, and the most
 concrete, providing mainly source code, of all standards.
 
 
-Now that a clearer understanding of what patterns are referring to in
-this article, we now move our attention to user experience and
-transparency. We talk about their development from the early user
-interface designs to the more recent advancements.
-
-\subsection{Technology-oriented Development}
-When junior software developers are given the task of designing a new
-product or system, most of the time, they tend to squeeze as many
-features as possible into whatever they are suppose to design. The
-interfaces between the user and the design are scattered all
-over. This can often be observed in corporates where a junior software
-developer is assigned to develop an internal tool to facilitate an
-existing working process. Though the design is practical, it is not
-very useful and the usage is limited to only a small selected group of
-users.
-
-The above phenomenons were also observed in the early days of user
-interface designs. Many new technologies---such as window, icon, menu,
-and pointing device---had grasped the attentions of the software
-developers. They were very eager to try out these new technologies and
-often falsely believed that the implementation of these new
-technologies were the goal of successful software.
-
-This is indicated by \citet{inmates:cooper} that although software
-developers work hard to make their software easy to use, their frame
-of reference is themselves and as a result they make it easy for other
-software developers, instead of typical end-users. He explains that
-since having too much influence over the design of the human interface
-and the lack of skills in this area, software developers do a poor job
-of it.
-
-\subsection{Usability}
-This situation will last until the software developers are introduced
-to the concept of usability. Since the 1980s, this concept was
-introduced by the published studies and analysis papers from a
-dedicated group of mostly psychologists and human factors researchers
-\citep{human:rubinstein, friendly:simpson, human:shneiderman,
-  human:brown, software:dumas}. The philosophy behind this is that
-every stage of the development process---requirements, design,
-implementation, verification, and maintenance---are given great
-attention to the needs and limitations of the users.
-
-In this user-oriented development, contrast to the previous
-technology-oriented or feature-oriented development, software
-developers work with experts from various specific fields---and most
-importantly, also collaborate closely with the actual users---to bring
-efficient, easy-to-learn, easy-to-memorize, and non-disruptive product
-to the user. They form psychology and physiology models of the user to
-anticipate their needs and limitations. And from that model, the
-software developers could build products that perfectly fit the users
-and not get in the way. Where the users can focus their attention on
-the tasks at hand as if the user interfaces do not exist or seem
-transparent \citep{computer:weiser}.
-
-This interface transparency is an indication of good user interface
-design. From their research, \citet{transparency:holtzblatt} show that
-elements of an application design can disrupt users' work. They
-observed that only when the users are not disrupted by the computer
-system will they remain in the flow of their work and experience
-transparency. It is also one of the ultimate goals for usability
-studies and is considered the ideal relationship between user and tool
-with the tool seeming to disappear by \citet{transparency:rutkoski}.
-
-\subsection{User Experience}
-However, the idea of striving for transparency is at the same time
-being challenged by others. \citet[p.~55]{windows:bolter} talked about
-the myth of transparency: {\it ``The danger of transparency is that
-  the interface will mask the operation of the system exactly when the
-  user needs to see and understand what the system is doing.''} One
-reason for this danger comes from the fact that designers and the
-users each have their own conceptual models or mental images of the
-product. Ideally, these two models should be identical for the users
-to understand and use the product properly. Unfortunately, this might
-not always be the case. So the users often have to form their own
-model exclusively from the observation of the product, whether from
-the exterior guise, the feedback provided, the responses from blogger,
-documentations, etc \citet{design:norman}. But if the product was
-invisible or transparent to the users, how could it act as a medium to
-help the users to understand itself? Transparency eliminates the
-communicative aspect of the user interfaces, along with others such as
-the engaging aspect.
-
-% other direction: user experience
-% difficulty of user experience
-The community of human-computer interaction quickly embraced the idea
-that solely pursuing for interface transparency and performance is not
-enough, and a richer model is required to encapsulate the other
-perspectives of the user interaction. These all fall under the
-umbrella term of user experience, which may include: addressing the
-human needs beyond the ``functional''; stressing affective and
-emotional aspects of the interaction; and dealing with the nature of
-experience \citep{ux:hassenzahl}. Many models have been proposed,
-however the universal definition for user experience is still not well
-understood nor fully clarified. Some definitions of user experience
-are included here to illustrate its diversity:
-\begin{quote}
-  {\it ``All the aspects of how people use an interactive product: the
-    way it feels in their hands, how well they understand how it
-    works, how they feel about it while they're using it, how well it
-    serves their purposes, and how well it fits into the entire
-    context in which they are using it.''}
-
-  \raggedleft \citet{experience:alben}
-\end{quote}
-
-\begin{quote}
-  {\it ``All aspects of the end-user's interaction with the company,
-    its services, and its product.''}
-
-  \raggedleft \citet{experience:nielsen}
-\end{quote}
-
-\begin{quote}
-  {\it ``A consequence of a user's internal state (predispositions,
-    expectations, needs, motivation, mood, etc.), the characteristics
-    of the designed system (e.g. complexity, purpose, usability,
-    functionality, etc.) and the context (or the environment) within
-    which the interaction occurs (e.g. organizational/social setting,
-    meaningfulness of the activity, voluntariness of use, etc.)''}
-
-  \raggedleft \citet{ux:hassenzahl}
-\end{description}
-
-There are several reasons why this is so, according to \citet{ux:law}
-for example:
-\begin{enumerate}
-  \item User experience is associated with a wide range of vague and
-    dynamic concepts, including emotional, affective, experiential,
-    hedonic, and aesthetic variables. Whether or not to include each
-    of these variables is greatly dependent on the interests and
-    background of the proposing author.
-  \item The unit for measuring user experience is
-    \textit{malleable}. Unlike usability where only a single aspect of
-    interaction between the user and the product is assessed with well
-    defined criteria, it could be extended to include multiple users,
-    environment while the product is being used, and more.
-\end{enumerate}
-
-
-\section{Patterns Of User Experience}
+\section{Patterns of User Experience}
 \label{sec:pux}
 Patterns of user experience, using the language similar to that of
 software patterns, describe a set of standards on implementing user
